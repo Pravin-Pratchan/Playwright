@@ -5,6 +5,7 @@ test('HomePage', async ({page}) => {
   await expect(page).toHaveTitle('STORE');
   await expect(page).toHaveURL('https://demoblaze.com/index.html');
   const a=await page.title();
+  const b=await page.url();
   console.log(a);
   await page.close();
 })
