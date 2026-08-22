@@ -6,5 +6,7 @@ test('test', async ({ page }) => {
   await page.getByRole('heading', { name: 'Nokia lumia' }).click();
   await page.getByRole('heading', { name: 'Nokia lumia' }).click();
   await page.getByRole('heading', { name: 'Nokia lumia' }).click();
+  await page.getByRole('link', { name: 'PRODUCT STORE' }).click();
+  await page.getByRole('link', { name: 'Laptops' }).click();
   await page.close();
 });
