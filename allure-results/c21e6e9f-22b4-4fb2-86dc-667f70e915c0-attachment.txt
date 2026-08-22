@@ -1,0 +1,1 @@
+getByAltText('company-branding')

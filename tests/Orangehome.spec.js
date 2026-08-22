@@ -9,7 +9,9 @@ test('HomePage', async ({page}) => {
   await page.getByPlaceholder('Username').fill('Admin');
   await page.getByPlaceholder('Password').fill('admin@123');
   await page.getByRole('button', {type: 'submit'}).click();
+  const login = await page.locator("//h5[normalize-space()='Login']");
+  await expect(login).toBeVisible();
 // const labells= page.getByLabel('Employee Id');
 // await expect(labells).toBeVisible();
-// await page.close();
+await page.close();
 })
