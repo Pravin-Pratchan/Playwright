@@ -7,5 +7,6 @@ test('HomePage', async ({page}) => {
   const a=await page.title();
   const b=await page.url();
   console.log(a);
+  console.log(b);
   await page.close();
 })
