@@ -14,6 +14,6 @@ await expect (await page.locator("//input[@id='thursday']")).not.toBeChecked();
 await expect (await page.locator("//input[@id='friday']")).not.toBeChecked();
 await expect (await page.locator("//input[@id='saturday']")).not.toBeChecked();
 
-//Get Array in online of Part 10
+await page.close();
 }
 )
