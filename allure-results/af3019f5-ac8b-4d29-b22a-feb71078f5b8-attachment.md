@@ -1,0 +1,504 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: david.spec.js >> david
+- Location: tests\david.spec.js:2:5
+
+# Error details
+
+```
+TypeError: page.getbyplaceholder is not a function
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e7]:
+      - generic [ref=e8]: David Labs and Scans is An ISO & NABL Accredited Lab located in Porur chennai It is the biggest reference lab nearby Porur Additional special is we do *Home Blood Collection and ECG.
+      - generic [ref=e14]:
+        - link [ref=e17] [cursor=pointer]:
+          - /url: index.html
+          - img "Creote Elementor" [ref=e18]
+        - generic [ref=e20]:
+          - generic [ref=e22]:
+            - generic [ref=e23]: 
+            - generic [ref=e24]:
+              - heading "6:00AM - 9:00PM" [level=4] [ref=e25]
+              - paragraph [ref=e26]: Monday to Saturday
+          - generic [ref=e28]:
+            - generic [ref=e29]: 
+            - generic [ref=e30]:
+              - heading "Home Visit Booking" [level=4] [ref=e31]
+              - paragraph [ref=e32]:
+                - link "+91 94866 33000" [ref=e34] [cursor=pointer]:
+                  - /url: tel:9486633000;
+          - text: 
+          - generic [ref=e36]:
+            - generic [ref=e37]: 
+            - generic [ref=e38]:
+              - heading "Become a Franchise" [level=4] [ref=e39]
+              - link "Click Here" [ref=e40] [cursor=pointer]:
+                - /url: franchise.html
+      - generic [ref=e45]:
+        - list [ref=e48]:
+          - listitem [ref=e49]:
+            - link "Home" [ref=e50] [cursor=pointer]:
+              - /url: index.html
+          - listitem [ref=e51]:
+            - link "About Us" [ref=e52] [cursor=pointer]:
+              - /url: about.html
+          - listitem [ref=e53]:
+            - link "Speciality Services" [ref=e54] [cursor=pointer]:
+              - /url: service.html
+          - listitem [ref=e55]:
+            - link "Directory of Services" [ref=e56] [cursor=pointer]:
+              - /url: directory-services.html
+          - listitem [ref=e57]:
+            - link "Packages" [ref=e58] [cursor=pointer]:
+              - /url: packeges.html
+          - listitem [ref=e59]:
+            - link "Our Branches" [ref=e60] [cursor=pointer]:
+              - /url: branch.html
+          - listitem [ref=e61]:
+            - link "Contact Us" [ref=e62] [cursor=pointer]:
+              - /url: contact.html
+        - generic [ref=e63]: Book a test
+    - generic [ref=e69]:
+      - generic [ref=e70]:
+        - generic [ref=e72]:
+          - generic [ref=e73]: Chennai's Most Reliable Lab Network
+          - heading "Best Health Check Packages for a Comprehensive Preventive and Prognostic Health Care" [level=2] [ref=e74]
+          - paragraph [ref=e75]
+        - link "More Details" [ref=e78] [cursor=pointer]:
+          - /url: service.html
+      - generic [ref=e82]:
+        - heading "Book Appointment" [level=6] [ref=e85]
+        - generic [ref=e87]:
+          - paragraph [ref=e88]: "Note : Verify Your Mobile Number With OTP"
+          - generic [ref=e89]:
+            - textbox "" [ref=e90]:
+              - /placeholder: Enter Your Name
+            - generic [ref=e91]: 
+          - generic [ref=e92]:
+            - textbox " Verfiy Mobile Number" [ref=e93]:
+              - /placeholder: Enter Mobile Number
+            - generic [ref=e94]: 
+            - text: Verfiy Mobile Number
+        - generic [ref=e95]:
+          - textbox "" [ref=e96]:
+            - /placeholder: Enter Test name
+          - generic [ref=e97]: 
+        - button "Apply" [ref=e98] [cursor=pointer]
+    - generic [ref=e103]:
+      - generic [ref=e104]:
+        - generic [ref=e106]:
+          - generic [ref=e107]: About
+          - heading "David Labs & Scans" [level=2] [ref=e108]
+          - paragraph [ref=e109]: David Labs & Scans, established in the year 2012, is uniquely positioned to more effectively support local pathology for enhanced patient care. David Labs & Scans, with complementary areas of expertise and service offerings, allows us to build on the company's leadership positions, provide access to medical and scientific expertise, expand geographical presence to better serve customers and emerge as the most valued company in the healthcare industry.
+        - link "More Details" [ref=e114] [cursor=pointer]:
+          - /url: about.html
+      - generic [ref=e117]:
+        - generic [ref=e118]:
+          - img "img" [ref=e119]
+          - link "" [ref=e121] [cursor=pointer]:
+            - /url: tel:09566979777
+        - img "img" [ref=e124]
+    - generic [ref=e130]:
+      - generic [ref=e131]:
+        - generic [ref=e134]:
+          - generic [ref=e135]:
+            - generic [ref=e136]: 
+            - text: OUR SERVICES
+          - generic [ref=e137]: SCANS & BLOOD TESTS
+        - link "More Services" [ref=e141] [cursor=pointer]:
+          - /url: service.html
+      - generic [ref=e144]:
+        - generic [ref=e146]:
+          - img "img" [ref=e148]
+          - generic [ref=e151]:
+            - heading [level=2] [ref=e152]:
+              - link "ECG" [ref=e153] [cursor=pointer]:
+                - /url: "#"
+            - paragraph [ref=e154]:
+              - generic [ref=e155] [cursor=pointer]: An ECG is a diagnostic procedure used to check the condition of your heart.
+            - link "" [ref=e156] [cursor=pointer]:
+              - /url: service.html#ecg
+        - generic [ref=e159]:
+          - img "img" [ref=e161]
+          - generic [ref=e164]:
+            - heading [level=2] [ref=e165]:
+              - link "Fully Automated Blood tests" [ref=e166] [cursor=pointer]:
+                - /url: "#"
+            - paragraph [ref=e167]:
+              - generic [ref=e168] [cursor=pointer]: We have A Fully Automated Analyzers to process blood ,Urine , Stool samples.
+            - link "" [ref=e169] [cursor=pointer]:
+              - /url: service.html#blood
+        - generic [ref=e172]:
+          - img "img" [ref=e174]
+          - generic [ref=e177]:
+            - heading "Ultrasound Scan" [level=2] [ref=e178]
+            - paragraph [ref=e180]:
+              - generic [ref=e181] [cursor=pointer]: An Ultrasound scan (or) USG can image the anatomy and pathology of organs in our abdomen, and neck.
+            - link "" [ref=e182] [cursor=pointer]:
+              - /url: service.html#mri
+    - generic [ref=e189]:
+      - generic [ref=e193]:
+        - generic [ref=e194]: David Labs & Scans
+        - heading "WHY CHOOSE" [level=2] [ref=e195]
+      - generic [ref=e196]:
+        - generic [ref=e200]:
+          - generic [ref=e201]: 
+          - generic [ref=e203]: "01"
+          - heading [level=2] [ref=e204]:
+            - link "10+ Years of Trust" [ref=e205] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=e209]:
+          - generic [ref=e210]: 
+          - generic [ref=e212]: "02"
+          - heading [level=2] [ref=e213]:
+            - link "Honest & Transparent Pricing" [ref=e214] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=e218]:
+          - generic [ref=e219]: 
+          - generic [ref=e221]: "03"
+          - heading [level=2] [ref=e222]:
+            - link "10+ Present Branches" [ref=e223] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=e227]:
+          - generic [ref=e228]: 
+          - generic [ref=e230]: "04"
+          - heading [level=2] [ref=e231]:
+            - link "10k Patients Served" [ref=e232] [cursor=pointer]:
+              - /url: "#"
+              - text: 10k PatientsServed
+    - generic [ref=e235]:
+      - generic [ref=e237]:
+        - link "" [ref=e242] [cursor=pointer]:
+          - /url: tel:9677030677;
+        - heading "Contact Now" [level=2] [ref=e245]
+      - generic [ref=e252]:
+        - generic [ref=e253]:
+          - generic [ref=e254]:
+            - heading "David Labs & Scans" [level=2] [ref=e255]
+            - paragraph [ref=e256]: David Labs & Scans, established in the year 2012, is uniquely positioned to more effectively support local pathology for enhanced patient care.
+          - link "More Details" [ref=e258] [cursor=pointer]:
+            - /url: about.html
+        - generic [ref=e260]:
+          - generic [ref=e263]:
+            - generic [ref=e264]: 
+            - generic [ref=e266]:
+              - heading "What’s App Chat" [level=3] [ref=e267]
+              - paragraph [ref=e268]:
+                - link "94866 33000" [ref=e269] [cursor=pointer]:
+                  - /url: https://wa.me/  9486633000
+          - generic [ref=e273]:
+            - generic [ref=e274]: 
+            - generic [ref=e276]:
+              - heading "Mail Support" [level=3] [ref=e277]
+              - paragraph [ref=e278]:
+                - link "info@davidscans.com" [ref=e279] [cursor=pointer]:
+                  - /url: "mailto: info@davidscans.com;"
+    - generic [ref=e285]:
+      - generic [ref=e289]:
+        - generic [ref=e290]: Full Body Health Checkup Package
+        - generic [ref=e291]: 4 to 5 MHC Packages starting from Rs 999 here
+      - generic [ref=e293]:
+        - img "image" [ref=e296]
+        - generic [ref=e297]:
+          - generic [ref=e298]:
+            - link:
+              - /url: "#"
+            - generic [ref=e299]:
+              - link "Weimann Ltd":
+                - /url: "#"
+                - img "Weimann Ltd" [ref=e301] [cursor=pointer]
+              - generic [ref=e302]:
+                - link [ref=e303] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e304]:
+                    - heading "PCOS Package" [level=3] [ref=e305]
+                    - generic [ref=e306]:
+                      - strong [ref=e307]: Fasting Blood Glucose
+                      - text: Quick Turn Around Time
+                - list [ref=e308]:
+                  - link:
+                    - /url: "#"
+                  - listitem [ref=e309]:
+                    - text: 
+                    - link:
+                      - /url: "#"
+                    - link "More Details" [ref=e310] [cursor=pointer]:
+                      - /url: packeges.html#pcos
+                  - listitem [ref=e311]:  Book Now
+          - generic [ref=e312]:
+            - link:
+              - /url: "#"
+            - generic [ref=e313]:
+              - link "Weimann Ltd":
+                - /url: "#"
+                - img "Weimann Ltd" [ref=e315] [cursor=pointer]
+              - generic [ref=e316]:
+                - link [ref=e317] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e318]:
+                    - heading "APLA Package" [level=3] [ref=e319]
+                    - strong [ref=e321]: This Package Tests are performed if a person has abnormal blood clotting, frequent miscarriages, stroke, or heart attack.
+                - list [ref=e322]:
+                  - link:
+                    - /url: "#"
+                  - listitem [ref=e323]:
+                    - text: 
+                    - link:
+                      - /url: "#"
+                    - link "More Details" [ref=e324] [cursor=pointer]:
+                      - /url: packeges.html#apla
+                  - listitem [ref=e325]:  Book Now
+          - generic [ref=e326]:
+            - link:
+              - /url: "#"
+            - generic [ref=e327]:
+              - link "Weimann Ltd":
+                - /url: "#"
+                - img "Weimann Ltd" [ref=e329] [cursor=pointer]
+              - generic [ref=e330]:
+                - link [ref=e331] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e332]:
+                    - heading "AMH PLUS Package" [level=3] [ref=e333]
+                    - strong [ref=e335]: This Package indicates assessment of a female's ovarian reserve and fertility potential It reveals Female reproduction system.
+                - list [ref=e336]:
+                  - link:
+                    - /url: "#"
+                  - listitem [ref=e337]:
+                    - text: 
+                    - link:
+                      - /url: "#"
+                    - link "More Details" [ref=e338] [cursor=pointer]:
+                      - /url: packeges.html#amh
+                  - listitem [ref=e339]:  Book Now
+    - generic [ref=e346]:
+      - generic [ref=e350]:
+        - generic [ref=e351]: Quote About
+        - heading "Customers Experience" [level=2] [ref=e352]
+      - generic [ref=e358]:
+        - group "1 / 5" [ref=e359]:
+          - generic [ref=e361]:
+            - list [ref=e363]:
+              - listitem [ref=e364]:
+                - generic [ref=e365]: 
+                - generic [ref=e366]: 
+                - generic [ref=e367]: 
+                - generic [ref=e368]: 
+                - generic [ref=e369]: 
+            - paragraph [ref=e370]: We are the only lab I’ve worked with who delivers consistently superior results. Their esthetic and implant work is second to none!
+            - generic [ref=e371]:
+              - img "image" [ref=e373]
+              - generic [ref=e374]:
+                - heading "Tom Auports.N" [level=2] [ref=e375]
+                - heading "President" [level=6] [ref=e376]
+        - group "2 / 5" [ref=e377]:
+          - generic [ref=e379]:
+            - list [ref=e381]:
+              - listitem [ref=e382]:
+                - generic [ref=e383]: 
+                - generic [ref=e384]: 
+                - generic [ref=e385]: 
+                - generic [ref=e386]: 
+                - generic [ref=e387]: 
+            - paragraph [ref=e388]: LAB is a well equipped facility for all types of diagnostic tests at KANNUR.Latest testing equipments and friendly staff with great emphasis on quality and hygiene.”
+            - generic [ref=e389]:
+              - img "image" [ref=e391]
+              - generic [ref=e392]:
+                - heading "Abdul Kathar.Z" [level=2] [ref=e393]
+                - heading "CEO Founder" [level=6] [ref=e394]
+        - group "3 / 5" [ref=e395]:
+          - generic [ref=e397]:
+            - list [ref=e399]:
+              - listitem [ref=e400]:
+                - generic [ref=e401]: 
+                - generic [ref=e402]: 
+                - generic [ref=e403]: 
+                - generic [ref=e404]: 
+                - generic [ref=e405]: 
+            - paragraph [ref=e406]: LAB has created a trust in the doctors and patients alike for high quality and reliability in diagnostics. Keep up the good work. Wishing you all, all the best.
+            - generic [ref=e407]:
+              - img "image" [ref=e409]
+              - generic [ref=e410]:
+                - heading "Samson.K" [level=2] [ref=e411]
+                - heading "Secretary & Founder" [level=6] [ref=e412]
+        - group "4 / 5" [ref=e413]:
+          - generic [ref=e415]:
+            - list [ref=e417]:
+              - listitem [ref=e418]:
+                - generic [ref=e419]: 
+                - generic [ref=e420]: 
+                - generic [ref=e421]: 
+                - generic [ref=e422]: 
+                - generic [ref=e423]: 
+            - paragraph [ref=e424]: LAB has been very pleasant. Warm hearted and sincere staff, well equipped for all types of tests and great ambience. Highly recommended.”
+            - generic [ref=e425]:
+              - img "image" [ref=e427]
+              - generic [ref=e428]:
+                - heading "Anand Krish.X" [level=2] [ref=e429]
+                - heading "President" [level=6] [ref=e430]
+        - group "5 / 5" [ref=e431]:
+          - generic [ref=e433]:
+            - list [ref=e435]:
+              - listitem [ref=e436]:
+                - generic [ref=e437]: 
+                - generic [ref=e438]: 
+                - generic [ref=e439]: 
+                - generic [ref=e440]: 
+                - generic [ref=e441]: 
+            - paragraph [ref=e442]: This lab provides restorative dentists with excellent technical support and high-quality lab work at reasonable fees. Their restorations are consistently excellent.
+            - generic [ref=e443]:
+              - img "image" [ref=e445]
+              - generic [ref=e446]:
+                - heading "Arjun Leo.C" [level=2] [ref=e447]
+                - heading "CEO Founder" [level=6] [ref=e448]
+  - generic [ref=e450]:
+    - generic [ref=e456]:
+      - heading "Preventive Health Checkup" [level=2] [ref=e458]
+      - link "Book your test" [ref=e459] [cursor=pointer]:
+        - /url: preventive-health-checkup.html
+    - generic [ref=e464]:
+      - generic [ref=e467]:
+        - img "logo" [ref=e470] [cursor=pointer]
+        - paragraph [ref=e472]: David Labs & Scans, established in the year 2012, is uniquely positioned to more effectively support local pathology for enhanced patient care.
+      - generic [ref=e473]:
+        - heading "Quick Links" [level=2] [ref=e476]
+        - list [ref=e482]:
+          - listitem [ref=e483]:
+            - link "Privacy Policy" [ref=e484] [cursor=pointer]:
+              - /url: privacy-policy.html
+          - listitem [ref=e485]:
+            - link "Terms of Service" [ref=e486] [cursor=pointer]:
+              - /url: terms-of-service.html
+          - listitem [ref=e487]:
+            - link "Refund and Cancellation Policy" [ref=e488] [cursor=pointer]:
+              - /url: refund-cancellation-policy.html
+          - listitem [ref=e489]:
+            - link "Pricing" [ref=e490] [cursor=pointer]:
+              - /url: pricing.html
+          - listitem [ref=e491]:
+            - link "Feedback" [ref=e492] [cursor=pointer]:
+              - /url: feedback.html
+      - generic [ref=e493]:
+        - heading "Packages" [level=2] [ref=e496]
+        - list [ref=e500]:
+          - listitem [ref=e501]:
+            - link "PCOS Package" [ref=e502] [cursor=pointer]:
+              - /url: packeges.html
+          - listitem [ref=e503]:
+            - link "APLA Package" [ref=e504] [cursor=pointer]:
+              - /url: packeges.html
+          - listitem [ref=e505]:
+            - link "AMH PLUS Package" [ref=e506] [cursor=pointer]:
+              - /url: packeges.html
+          - listitem [ref=e507]:
+            - link "STD Profile Basic" [ref=e508] [cursor=pointer]:
+              - /url: packeges.html
+          - listitem [ref=e509]:
+            - link "Metabolic Profile" [ref=e510] [cursor=pointer]:
+              - /url: packeges.html
+      - generic [ref=e511]:
+        - heading "Packages" [level=2] [ref=e514]
+        - list [ref=e518]:
+          - listitem [ref=e519]:
+            - link "Fever Profile" [ref=e520] [cursor=pointer]:
+              - /url: packeges.html
+          - listitem [ref=e521]:
+            - link "Arthritis Profile" [ref=e522] [cursor=pointer]:
+              - /url: packeges.html
+          - listitem [ref=e523]:
+            - link "Cardiac Risk Profile" [ref=e524] [cursor=pointer]:
+              - /url: packeges.html
+          - listitem [ref=e525]:
+            - link "Anemia Package" [ref=e526] [cursor=pointer]:
+              - /url: packeges.html
+          - listitem [ref=e527]:
+            - link "Healthy Pregnant" [ref=e528] [cursor=pointer]:
+              - /url: packeges.html
+      - generic [ref=e529]:
+        - heading "Get In Touch" [level=2] [ref=e532]
+        - generic [ref=e535]:
+          - paragraph [ref=e537]: Madanandapuram, Porur, Chennai - 600 125
+          - generic [ref=e538]:
+            - heading "Contact" [level=6] [ref=e539]
+            - generic [ref=e540]:
+              - heading "Phone :" [level=5] [ref=e541]
+              - link "044-4214 9999" [ref=e542] [cursor=pointer]:
+                - /url: tel:04442149999
+            - generic [ref=e543]:
+              - heading "Mail Us :" [level=5] [ref=e544]
+              - link "info@davidscans.com" [ref=e545] [cursor=pointer]:
+                - /url: tel:info@davidscans.com
+    - generic [ref=e550]:
+      - generic [ref=e552]:
+        - text: © 2017
+        - link "David Labs & Scans" [ref=e553] [cursor=pointer]:
+          - /url: index.html
+        - text: All Rights Reserved. Designed By
+        - link "Imperial" [ref=e554] [cursor=pointer]:
+          - /url: https://impinfo.in/
+      - list [ref=e558]:
+        - listitem [ref=e559]:
+          - link " facebook" [ref=e560] [cursor=pointer]:
+            - /url: https://www.facebook.com/
+            - generic [ref=e561]: 
+            - generic [ref=e562]: facebook
+        - listitem [ref=e563]:
+          - link " instagram" [ref=e564] [cursor=pointer]:
+            - /url: https://www.instagram.com/davidlabsandscans/
+            - generic [ref=e565]: 
+            - generic [ref=e566]: instagram
+        - listitem [ref=e567]:
+          - link " linkedin" [ref=e568] [cursor=pointer]:
+            - /url: https://www.linkedin.com/
+            - generic [ref=e569]: 
+            - generic [ref=e570]: linkedin
+        - listitem [ref=e571]:
+          - link " youtube" [ref=e572] [cursor=pointer]:
+            - /url: https://www.youtube.com/
+            - generic [ref=e573]: 
+            - generic [ref=e574]: youtube
+  - generic [ref=e576] [cursor=pointer]:  
+  - text: 
+  - list [ref=e581] [cursor=pointer]:
+    - listitem [ref=e582]: P
+    - listitem [ref=e583]: A
+    - listitem [ref=e584]: "Y"
+    - listitem [ref=e585]: M
+    - listitem [ref=e586]: E
+    - listitem [ref=e587]: "N"
+    - listitem [ref=e588]: T
+    - listitem [ref=e589]: S
+  - text: 
+  - link "" [ref=e591] [cursor=pointer]:
+    - /url: tel:+919486633000
+  - iframe [ref=e593]:
+    - generic [ref=f1e5]:
+      - button [ref=f1e6] [cursor=pointer]
+      - generic [ref=f1e7]: "1"
+  - generic [ref=e595]:
+    - strong [ref=e599] [cursor=pointer]: Welcome to David Labs & Scans
+    - generic [ref=e600] [cursor=pointer]
+```
+
+# Test source
+
+```ts
+  1 | import { test, expect } from '@playwright/test'; 
+  2 | test('david', async ({page}) => {
+  3 |     await page.goto('https://www.davidscans.com/');
+> 4 |     await expect(page.getbyplaceholder('Creote Elementor')).toBeVisible();
+    |                       ^ TypeError: page.getbyplaceholder is not a function
+  5 | });
+```
