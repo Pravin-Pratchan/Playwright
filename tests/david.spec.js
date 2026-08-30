@@ -7,7 +7,7 @@ test('david', async ({page}) => {
     await page.getByPlaceholder('Your Name *').fill('Test');
     await page.getByPlaceholder('Mobile Number *').fill('9999999999');
     await page.getByPlaceholder('Enter the Test *').fill('Tests');
-    await page.waitForTimeout(9000);
+    // await page.waitForTimeout(9000);
     await page.getByRole('button', {type: 'submit'}).click();
     await page.close();
 });

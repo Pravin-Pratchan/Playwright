@@ -1,0 +1,283 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: david.spec.js >> david
+- Location: tests\david.spec.js:2:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=f12e1]:
+  - generic [ref=f12e2]:
+    - generic [ref=f12e3]:
+      - banner [ref=f12e7]:
+        - generic [ref=f12e8]: David Labs and Scans is An ISO & NABL Accredited Lab located in Porur chennai It is the biggest reference lab nearby Porur Additional special is we do *Home Blood Collection and ECG.
+        - generic [ref=f12e14]:
+          - link [ref=f12e17] [cursor=pointer]:
+            - /url: index.html
+            - img "Creote Elementor" [ref=f12e18]
+          - generic [ref=f12e20]:
+            - generic [ref=f12e22]:
+              - generic [ref=f12e23]: 
+              - generic [ref=f12e24]:
+                - heading "6:00AM - 9:00PM" [level=4] [ref=f12e25]
+                - paragraph [ref=f12e26]: Monday to Saturday
+            - generic [ref=f12e28]:
+              - generic [ref=f12e29]: 
+              - generic [ref=f12e30]:
+                - heading "Home Visit Booking" [level=4] [ref=f12e31]
+                - paragraph [ref=f12e32]:
+                  - link "+91 94866 33000" [ref=f12e34] [cursor=pointer]:
+                    - /url: tel:9486633000;
+            - text: 
+            - generic [ref=f12e36]:
+              - generic [ref=f12e37]: 
+              - generic [ref=f12e38]:
+                - heading "Become a Franchise" [level=4] [ref=f12e39]
+                - link "Click Here" [ref=f12e40] [cursor=pointer]:
+                  - /url: franchise.html
+        - generic [ref=f12e45]:
+          - list [ref=f12e48]:
+            - listitem [ref=f12e49]:
+              - link "Home" [ref=f12e50] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=f12e51]:
+              - link "About Us" [ref=f12e52] [cursor=pointer]:
+                - /url: about.html
+            - listitem [ref=f12e53]:
+              - link "Speciality Services" [ref=f12e54] [cursor=pointer]:
+                - /url: service.html
+            - listitem [ref=f12e55]:
+              - link "Directory of Services" [ref=f12e56] [cursor=pointer]:
+                - /url: directory-services.html
+            - listitem [ref=f12e57]:
+              - link "Packages" [ref=f12e58] [cursor=pointer]:
+                - /url: packeges.html
+            - listitem [ref=f12e59]:
+              - link "Our Branches" [ref=f12e60] [cursor=pointer]:
+                - /url: branch.html
+            - listitem [ref=f12e61]:
+              - link "Contact Us" [ref=f12e62] [cursor=pointer]:
+                - /url: contact.html
+          - generic [ref=f12e63]: Book a test
+      - generic [ref=f12e65]:
+        - img "bg_image" [ref=f12e68]
+        - generic [ref=f12e71]:
+          - generic [ref=f12e72]: Contact
+          - list [ref=f12e77]:
+            - listitem [ref=f12e78]:
+              - text: 
+              - link "Home" [ref=f12e79] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=f12e80]: Contact
+      - generic [ref=f12e81]:
+        - generic [ref=f12e85]:
+          - generic [ref=f12e86]:
+            - heading "Reach Our Expert Team" [level=2] [ref=f12e87]
+            - paragraph [ref=f12e88]: Send a message through given form, If your enquiry is time sensitive please use below contact details.
+            - form [ref=f12e92]:
+              - generic [ref=f12e94]:
+                - generic [ref=f12e96]:
+                  - generic [ref=f12e97]: Your Name
+                  - textbox "Your Name *" [ref=f12e98]
+                - generic [ref=f12e100]:
+                  - generic [ref=f12e101]: Mobile Number
+                  - textbox "Mobile Number *" [ref=f12e102]
+                - generic [ref=f12e104]:
+                  - generic [ref=f12e105]: Enter the Test
+                  - textbox "Enter the Test *" [ref=f12e106]
+                - button "Appointment" [ref=f12e107] [cursor=pointer]
+          - generic [ref=f12e108]:
+            - generic [ref=f12e109]: Contact Info to
+            - generic [ref=f12e113] [cursor=pointer]:
+              - generic [ref=f12e114]: 
+              - generic [ref=f12e116]:
+                - heading "Address" [level=3] [ref=f12e117]
+                - paragraph [ref=f12e118]: Plot No 45 ,Annai Vailankanni Nagar -I , Mugalivakkam Main Road, Madanandapuram, Porur,Chennai -600125
+            - generic [ref=f12e121] [cursor=pointer]:
+              - generic [ref=f12e122]: 
+              - generic [ref=f12e124]:
+                - heading "General Enquires" [level=3] [ref=f12e125]
+                - paragraph [ref=f12e126]:
+                  - text: "Phone:"
+                  - link "044-4214 9999" [ref=f12e127]:
+                    - /url: tel:04442149999
+                  - text: /
+                  - link "044-2482 5555" [ref=f12e128]:
+                    - /url: "tel:04424825555 "
+                  - text: /
+                  - link "94866 33000" [ref=f12e129]:
+                    - /url: tel:09486633000
+                  - text: "& Email:"
+                  - link "info@davidscans.com" [ref=f12e130]:
+                    - /url: mailto:info@davidscans.com;
+                  - text: /
+                  - link "davidlabsandscans@gmail.com" [ref=f12e131]:
+                    - /url: mailto:davidlabsandscans@gmail.com ;
+            - generic [ref=f12e134] [cursor=pointer]:
+              - generic [ref=f12e135]: 
+              - generic [ref=f12e137]:
+                - heading "Operation Hours" [level=3] [ref=f12e138]
+                - paragraph [ref=f12e139]: "Mon-Sat: 06.00 Am to 09.00 Pm"
+                - paragraph [ref=f12e140]: "Sunday: 06.00 Am to 12.00 Pm"
+            - list [ref=f12e143]:
+              - listitem [ref=f12e144]:
+                - link " facebook" [ref=f12e145] [cursor=pointer]:
+                  - /url: https://www.facebook.com/
+                  - generic [ref=f12e146]: 
+                  - generic [ref=f12e147]: facebook
+              - listitem [ref=f12e148]:
+                - link " instagram" [ref=f12e149] [cursor=pointer]:
+                  - /url: https://www.instagram.com/
+                  - generic [ref=f12e150]: 
+                  - generic [ref=f12e151]: instagram
+              - listitem [ref=f12e152]:
+                - link " linkedin" [ref=f12e153] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/
+                  - generic [ref=f12e154]: 
+                  - generic [ref=f12e155]: linkedin
+              - listitem [ref=f12e156]:
+                - link " youtube" [ref=f12e157] [cursor=pointer]:
+                  - /url: https://www.youtube.com/
+                  - generic [ref=f12e158]: 
+                  - generic [ref=f12e159]: youtube
+        - iframe [ref=f12e165]:
+          
+      - generic [ref=f12e166]:
+        - generic [ref=f12e170]:
+          - generic [ref=f12e173]:
+            - link [ref=f12e175] [cursor=pointer]:
+              - /url: "#"
+              - img "logo" [ref=f12e176]
+            - paragraph [ref=f12e178]: David Labs & Scans, established in the year 2012, is uniquely positioned to more effectively support local pathology for enhanced patient care.
+          - generic [ref=f12e179]:
+            - heading "Quick Links" [level=2] [ref=f12e182]
+            - list [ref=f12e188]:
+              - listitem [ref=f12e189]:
+                - link "Privacy Policy" [ref=f12e190] [cursor=pointer]:
+                  - /url: privacy-policy.html
+              - listitem [ref=f12e191]:
+                - link "Terms of Service" [ref=f12e192] [cursor=pointer]:
+                  - /url: terms-of-service.html
+              - listitem [ref=f12e193]:
+                - link "Refund and Cancellation Policy" [ref=f12e194] [cursor=pointer]:
+                  - /url: refund-cancellation-policy.html
+              - listitem [ref=f12e195]:
+                - link "Pricing" [ref=f12e196] [cursor=pointer]:
+                  - /url: pricing.html
+              - listitem [ref=f12e197]:
+                - link "Feedback" [ref=f12e198] [cursor=pointer]:
+                  - /url: feedback.html
+          - generic [ref=f12e199]:
+            - heading "Packages" [level=2] [ref=f12e202]
+            - list [ref=f12e206]:
+              - listitem [ref=f12e207]:
+                - link "PCOS Package" [ref=f12e208] [cursor=pointer]:
+                  - /url: packeges.html
+              - listitem [ref=f12e209]:
+                - link "APLA Package" [ref=f12e210] [cursor=pointer]:
+                  - /url: packeges.html
+              - listitem [ref=f12e211]:
+                - link "AMH PLUS Package" [ref=f12e212] [cursor=pointer]:
+                  - /url: packeges.html
+              - listitem [ref=f12e213]:
+                - link "STD Profile Basic" [ref=f12e214] [cursor=pointer]:
+                  - /url: packeges.html
+              - listitem [ref=f12e215]:
+                - link "Metabolic Profile" [ref=f12e216] [cursor=pointer]:
+                  - /url: packeges.html
+          - generic [ref=f12e217]:
+            - heading "Packages" [level=2] [ref=f12e220]
+            - list [ref=f12e224]:
+              - listitem [ref=f12e225]:
+                - link "Fever Profile" [ref=f12e226] [cursor=pointer]:
+                  - /url: packeges.html
+              - listitem [ref=f12e227]:
+                - link "Arthritis Profile" [ref=f12e228] [cursor=pointer]:
+                  - /url: packeges.html
+              - listitem [ref=f12e229]:
+                - link "Cardiac Risk Profile" [ref=f12e230] [cursor=pointer]:
+                  - /url: packeges.html
+              - listitem [ref=f12e231]:
+                - link "Anemia Package" [ref=f12e232] [cursor=pointer]:
+                  - /url: packeges.html
+              - listitem [ref=f12e233]:
+                - link "Healthy Pregnant" [ref=f12e234] [cursor=pointer]:
+                  - /url: packeges.html
+          - generic [ref=f12e235]:
+            - heading "Get In Touch" [level=2] [ref=f12e238]
+            - generic [ref=f12e241]:
+              - paragraph [ref=f12e243]: Madanandapuram, Porur, Chennai - 600 125
+              - generic [ref=f12e244]:
+                - heading "Contact" [level=6] [ref=f12e245]
+                - generic [ref=f12e246]:
+                  - heading "Phone :" [level=5] [ref=f12e247]
+                  - link "044-4214 9999" [ref=f12e248] [cursor=pointer]:
+                    - /url: tel:04442149999
+                - generic [ref=f12e249]:
+                  - heading "Mail Us :" [level=5] [ref=f12e250]
+                  - link "info@davidscans.com" [ref=f12e251] [cursor=pointer]:
+                    - /url: tel:info@davidscans.com
+        - generic [ref=f12e256]:
+          - generic [ref=f12e258]:
+            - text: © 2017
+            - link "David Labs & Scans" [ref=f12e259] [cursor=pointer]:
+              - /url: index.html
+            - text: All Rights Reserved. Designed By
+            - link "Imperial" [ref=f12e260] [cursor=pointer]:
+              - /url: https://impinfo.in/
+          - list [ref=f12e264]:
+            - listitem [ref=f12e265]:
+              - link " facebook" [ref=f12e266] [cursor=pointer]:
+                - /url: https://www.facebook.com/
+                - generic [ref=f12e267]: 
+                - generic [ref=f12e268]: facebook
+            - listitem [ref=f12e269]:
+              - link " instagram" [ref=f12e270] [cursor=pointer]:
+                - /url: https://www.instagram.com/davidlabsandscans/
+                - generic [ref=f12e271]: 
+                - generic [ref=f12e272]: instagram
+            - listitem [ref=f12e273]:
+              - link " linkedin" [ref=f12e274] [cursor=pointer]:
+                - /url: https://www.linkedin.com/
+                - generic [ref=f12e275]: 
+                - generic [ref=f12e276]: linkedin
+            - listitem [ref=f12e277]:
+              - link " youtube" [ref=f12e278] [cursor=pointer]:
+                - /url: https://www.youtube.com/
+                - generic [ref=f12e279]: 
+                - generic [ref=f12e280]: youtube
+      - generic [ref=f12e282] [cursor=pointer]:  
+      - list [ref=f12e287] [cursor=pointer]:
+        - listitem [ref=f12e288]: P
+        - listitem [ref=f12e289]: A
+        - listitem [ref=f12e290]: "Y"
+        - listitem [ref=f12e291]: M
+        - listitem [ref=f12e292]: E
+        - listitem [ref=f12e293]: "N"
+        - listitem [ref=f12e294]: T
+        - listitem [ref=f12e295]: S
+      - text: 
+    - link "" [ref=f12e297] [cursor=pointer]:
+      - /url: tel:+919486633000
+  - iframe [ref=f12e299]:
+    - generic [ref=f14e5]:
+      - button [ref=f14e6] [cursor=pointer]
+      - generic [ref=f14e7]: "1"
+  - generic [ref=f12e300]:
+    - generic [ref=f12e301] [cursor=pointer]
+    - generic [ref=f12e303]:
+      - strong [ref=f12e307] [cursor=pointer]: Welcome to David Labs & Scans
+      - generic [ref=f12e308] [cursor=pointer]
+```
