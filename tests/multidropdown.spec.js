@@ -19,6 +19,5 @@ await expect(options).toHaveCount(7);
 //check the count using array
 const options2 = await page.$$('#colors option');
 await expect(options2.length).toBe(7);
-console.log(options2.length);
 });
  
