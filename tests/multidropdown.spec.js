@@ -6,13 +6,11 @@ await page.locator('#colors').selectOption(["Red", "Blue", "Yellow"]);
 
 //To check the selected value present in the dropdown
 await expect(page.locator('#colors')).toHaveValues(["red", "blue", "yellow"]);
-
+  await page.waitForTimeout(3000);
 //To check the value present in the dropdown
 const content = await page.locator('#colors').textContent();
 await expect(content.includes("Blue")).toBeTruthy();
 await expect(content.includes("Green")).toBeTruthy();
-
-
 
 //check the count
 const options = await page.locator('#colors option');
