@@ -1,12 +1,12 @@
 const { test, expect } = require('@playwright/test');
 
-test('Dropdown - values present & select', async ({ page }) => {
+test('Dropdown', async ({ page }) => {
   await page.goto('https://testautomationpractice.blogspot.com/');
 
   // Select by label
 await page.locator('#country').selectOption({ label: 'India' });
 await expect(page.locator('#country')).toHaveValue('india');
-  // select by Test: await page.locator('#country').selectOption('India');
+  // select by Text: await page.locator('#country').selectOption('India');
   // select by Value: await page.locator('#country').selectOption('UK');
   // select by index no. await  page.locator('#country').selectOption({index: 1});
   // select by direct method await page.selectOption('#country', 'india');
