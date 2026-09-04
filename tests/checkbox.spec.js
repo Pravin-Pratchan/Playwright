@@ -18,6 +18,5 @@ await expect (await page.locator("//input[@id='thursday']")).not.toBeChecked();
 await expect (await page.locator("//input[@id='friday']")).not.toBeChecked();
 await expect (await page.locator("//input[@id='saturday']")).not.toBeChecked();
 
-await page.close();
 }
 )

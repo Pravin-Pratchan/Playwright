@@ -9,7 +9,7 @@ test('checkboxarray', async ({ page }) => {
     "//input[@type='checkbox' and @id='sunday']"
   ];
 
-  // Correct way - just check them
+  // To check the element
   for (const locator of checkBoxesLocators) {
     await page.locator(locator).check();
   }
