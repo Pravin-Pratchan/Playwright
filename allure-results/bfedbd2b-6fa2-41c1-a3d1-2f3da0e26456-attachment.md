@@ -1,0 +1,106 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: boot.spec.js >> boot
+- Location: tests\boot.spec.js:3:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.check: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('//input[@value=\'php\']')
+    - locator resolved to <input value="php" type="checkbox"/>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 100ms
+    - waiting for element to be visible, enabled and stable
+    - element is not visible
+  - retrying click action
+    - waiting 500ms
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - 'heading "Multiselect #01" [level=2] [ref=e6]'
+  - generic [ref=e9]:
+    - strong [ref=e10]: "Select Language:"
+    - generic [ref=e11]:
+      - button "None selected" [expanded] [active] [ref=e12] [cursor=pointer]
+      - list [ref=e13]:
+        - listitem [ref=e14]:
+          - generic [ref=e16] [cursor=pointer]:
+            - checkbox "Select all"
+            - text: Select all
+        - listitem [ref=e17]:
+          - generic [ref=e19] [cursor=pointer]:
+            - checkbox "PHP"
+            - text: PHP
+        - listitem [ref=e20]:
+          - generic [ref=e22] [cursor=pointer]:
+            - checkbox "JavaScript"
+            - text: JavaScript
+        - listitem [ref=e23]:
+          - generic [ref=e25] [cursor=pointer]:
+            - checkbox "Java"
+            - text: Java
+        - listitem [ref=e26]:
+          - generic [ref=e28] [cursor=pointer]:
+            - checkbox "SQL"
+            - text: SQL
+        - listitem [ref=e29]:
+          - generic [ref=e31] [cursor=pointer]:
+            - checkbox "Jquery"
+            - text: Jquery
+        - listitem [ref=e32]:
+          - generic [ref=e34] [cursor=pointer]:
+            - checkbox ".Net"
+            - text: .Net
+```
+
+# Test source
+
+```ts
+  1  | import{test, expect} from '@playwright/test'
+  2  | 
+  3  | test('boot', async ({ page }) => {
+  4  | 
+  5  |   await page.goto('https://preview.colorlib.com/theme/bootstrap/multiselect-01/?_gl=1*1pw7s94*_ga*MTQ0NjcxOTkyOC4xNzg4NjU5ODUy*_ga_SEKJ4E9T4H*czE3ODg2NTk4NTEkbzEkZzAkdDE3ODg2NTk4NTEkajYwJGwwJGgwJGQ1VTd1NnZlRDlhOXUxVW5YVFlGYnp2TzRiTFpyZHhEN2JB');
+  6  |   await page.locator('.multiselect').click();
+> 7  | await page.locator("//input[@value='php']").check();
+     |                                             ^ Error: locator.check: Test timeout of 30000ms exceeded.
+  8  |  // await page.locator("//label[normalize-space()='Select all']").click();
+  9  | await expect (await page.locator("//label[normalize-space()='PHP']")).toBeChecked();
+  10 |   await expect (await page.locator("//label[normalize-space()='JavaScript']")).not.toBeChecked();
+  11 | await page.waitForTimeout(4000);
+  12 | });
+  13 | 
+  14 | // test('boot', async({page})=>{
+  15 | 
+  16 | // await page.goto('https://demoqa.com/select-menu');
+  17 | // await page.locator('#oldSelectMenu').click();
+  18 | // await page.locator('#oldSelectMenu').selectOption('Green');
+  19 | // await page.locator('#oldSelectMenu').selectOption('Red');
+  20 | // await expect(page.locator('#oldSelectMenu')).toHaveValue("red");
+  21 | // await page.waitForTimeout(3000);
+  22 | // })
+  23 | 
+```
