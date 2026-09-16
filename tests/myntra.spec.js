@@ -25,5 +25,5 @@ test('Myntra', async ({ page }) => {
     }
 
     const productName = await getProductName(page, minPrice);
-    console.log("Product name: " + productName);
+    console.log("Product name of the minumun price: " + productName);
 });
