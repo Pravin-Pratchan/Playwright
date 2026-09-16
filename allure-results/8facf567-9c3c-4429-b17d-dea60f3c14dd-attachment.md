@@ -1,0 +1,1475 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: myntra.spec.js >> Myntra
+- Location: tests\myntra.spec.js:4:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: page.waitForTimeout: Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=f9e1]:
+  - banner [ref=f9e3]:
+    - text: "| | |"
+    - generic:
+      - link [ref=f9e5] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=f9e6]:
+        - generic [ref=f9e7]:
+          - link "Men" [ref=f9e10] [cursor=pointer]:
+            - /url: /shop/men
+          - link "Women" [ref=f9e13] [cursor=pointer]:
+            - /url: /shop/women
+          - link "Kids" [ref=f9e16] [cursor=pointer]:
+            - /url: /shop/kids
+          - link "Home" [ref=f9e19] [cursor=pointer]:
+            - /url: /shop/home-living
+          - link "Beauty" [ref=f9e22] [cursor=pointer]:
+            - /url: /personal-care
+          - link "Genz" [ref=f9e25] [cursor=pointer]:
+            - /url: /shop/fwd-women
+          - generic [ref=f9e27]:
+            - link "Studio" [ref=f9e28] [cursor=pointer]:
+              - /url: /studio/home
+            - superscript [ref=f9e30]: new
+      - generic [ref=f9e31]:
+        - generic [ref=f9e32]: Profile
+        - link "Wishlist":
+          - /url: /wishlist
+          - generic [ref=f9e36] [cursor=pointer]
+        - link "Bag":
+          - /url: /checkout/cart
+          - generic [ref=f9e38] [cursor=pointer]
+      - textbox "Search for products, brands and more" [ref=f9e41]
+  - generic [ref=f9e45]:
+    - main [ref=f9e46]:
+      - list [ref=f9e49]:
+        - listitem [ref=f9e50]:
+          - link "Home" [ref=f9e51] [cursor=pointer]:
+            - /url: /?src=bc
+          - text: /
+        - listitem [ref=f9e52]:
+          - link "Accessories" [ref=f9e53] [cursor=pointer]:
+            - /url: /accessories?src=bc
+          - text: /
+        - listitem [ref=f9e54]: Bag
+      - generic [ref=f9e56]:
+        - heading "Bag" [level=1] [ref=f9e57]
+        - generic [ref=f9e58]: "- 187711 items"
+      - generic [ref=f9e59]:
+        - generic [ref=f9e62]:
+          - generic [ref=f9e63]: FILTERS
+          - list [ref=f9e65]:
+            - listitem [ref=f9e66]:
+              - generic [ref=f9e67] [cursor=pointer]: Men
+            - listitem [ref=f9e68]:
+              - generic [ref=f9e69] [cursor=pointer]: Women
+            - listitem [ref=f9e70]:
+              - generic [ref=f9e71] [cursor=pointer]: Boys
+            - listitem [ref=f9e72]:
+              - generic [ref=f9e73] [cursor=pointer]: Girls
+          - generic [ref=f9e74]:
+            - generic [ref=f9e75]: Categories
+            - generic [ref=f9e77] [cursor=pointer]
+            - list [ref=f9e78]:
+              - listitem [ref=f9e79]:
+                - generic [ref=f9e80] [cursor=pointer]:
+                  - text: Handbags
+                  - generic [ref=f9e81]: (98321)
+              - listitem [ref=f9e83]:
+                - generic [ref=f9e84] [cursor=pointer]:
+                  - text: Backpacks
+                  - generic [ref=f9e85]: (44883)
+              - listitem [ref=f9e87]:
+                - generic [ref=f9e88] [cursor=pointer]:
+                  - text: Clutches
+                  - generic [ref=f9e89]: (22419)
+              - listitem [ref=f9e91]:
+                - generic [ref=f9e92] [cursor=pointer]:
+                  - text: Trolley Bag
+                  - generic [ref=f9e93]: (7352)
+              - listitem [ref=f9e95]:
+                - generic [ref=f9e96] [cursor=pointer]:
+                  - text: Laptop Bag
+                  - generic [ref=f9e97]: (5864)
+              - listitem [ref=f9e99]:
+                - generic [ref=f9e100] [cursor=pointer]:
+                  - text: Duffel Bag
+                  - generic [ref=f9e101]: (3439)
+              - listitem [ref=f9e103]:
+                - generic [ref=f9e104] [cursor=pointer]:
+                  - text: Messenger Bag
+                  - generic [ref=f9e105]: (3381)
+              - listitem [ref=f9e107]:
+                - generic [ref=f9e108] [cursor=pointer]:
+                  - text: Waist Pouch
+                  - generic [ref=f9e109]: (1450)
+            - generic [ref=f9e111] [cursor=pointer]: + 2 more
+          - generic [ref=f9e112]:
+            - generic [ref=f9e113]: Brand
+            - generic [ref=f9e115] [cursor=pointer]
+            - list [ref=f9e116]:
+              - listitem [ref=f9e117]:
+                - generic [ref=f9e118] [cursor=pointer]:
+                  - text: EVLINLIFESTYLE
+                  - generic [ref=f9e119]: (14634)
+              - listitem [ref=f9e121]:
+                - generic [ref=f9e122] [cursor=pointer]:
+                  - text: CORSICA
+                  - generic [ref=f9e123]: (8363)
+              - listitem [ref=f9e125]:
+                - generic [ref=f9e126] [cursor=pointer]:
+                  - text: StyleCast x Revolte
+                  - generic [ref=f9e127]: (5200)
+              - listitem [ref=f9e129]:
+                - generic [ref=f9e130] [cursor=pointer]:
+                  - text: StyleCast
+                  - generic [ref=f9e131]: (4768)
+              - listitem [ref=f9e133]:
+                - generic [ref=f9e134] [cursor=pointer]:
+                  - text: Mast & Harbour
+                  - generic [ref=f9e135]: (2788)
+              - listitem [ref=f9e137]:
+                - generic [ref=f9e138] [cursor=pointer]:
+                  - text: GUESS
+                  - generic [ref=f9e139]: (2680)
+              - listitem [ref=f9e141]:
+                - generic [ref=f9e142] [cursor=pointer]:
+                  - text: RESHU
+                  - generic [ref=f9e143]: (2434)
+              - listitem [ref=f9e145]:
+                - generic [ref=f9e146] [cursor=pointer]:
+                  - text: ARTKLIM
+                  - generic [ref=f9e147]: (2273)
+            - generic [ref=f9e149] [cursor=pointer]: + 1702 more
+          - generic [ref=f9e150]:
+            - generic [ref=f9e151]: Price
+            - generic [ref=f9e153]:
+              - generic [ref=f9e154]:
+                - button [ref=f9e157]
+                - button [ref=f9e159]
+              - generic [ref=f9e161]: ₹100 - ₹10,100+
+          - generic [ref=f9e162]:
+            - generic [ref=f9e163]: Color
+            - generic [ref=f9e165] [cursor=pointer]
+            - list [ref=f9e166]:
+              - listitem [ref=f9e167]:
+                - generic [ref=f9e168] [cursor=pointer]:
+                  - text: Black
+                  - generic [ref=f9e170]: (37051)
+              - listitem [ref=f9e172]:
+                - generic [ref=f9e173] [cursor=pointer]:
+                  - text: Multi
+                  - generic [ref=f9e175]: (21157)
+              - listitem [ref=f9e177]:
+                - generic [ref=f9e178] [cursor=pointer]:
+                  - text: Brown
+                  - generic [ref=f9e180]: (16776)
+              - listitem [ref=f9e182]:
+                - generic [ref=f9e183] [cursor=pointer]:
+                  - text: Blue
+                  - generic [ref=f9e185]: (13190)
+              - listitem [ref=f9e187]:
+                - generic [ref=f9e188] [cursor=pointer]:
+                  - text: Pink
+                  - generic [ref=f9e190]: (10117)
+              - listitem [ref=f9e192]:
+                - generic [ref=f9e193] [cursor=pointer]:
+                  - text: White
+                  - generic [ref=f9e195]: (9274)
+              - listitem [ref=f9e197]:
+                - generic [ref=f9e198] [cursor=pointer]:
+                  - text: Grey
+                  - generic [ref=f9e200]: (9139)
+            - generic [ref=f9e202] [cursor=pointer]: + 44 more
+          - generic [ref=f9e204]:
+            - generic [ref=f9e205]: Discount Range
+            - list [ref=f9e206]:
+              - listitem [ref=f9e207]:
+                - generic [ref=f9e208] [cursor=pointer]: 10% and above
+              - listitem [ref=f9e209]:
+                - generic [ref=f9e210] [cursor=pointer]: 20% and above
+              - listitem [ref=f9e211]:
+                - generic [ref=f9e212] [cursor=pointer]: 30% and above
+              - listitem [ref=f9e213]:
+                - generic [ref=f9e214] [cursor=pointer]: 40% and above
+              - listitem [ref=f9e215]:
+                - generic [ref=f9e216] [cursor=pointer]: 50% and above
+              - listitem [ref=f9e217]:
+                - generic [ref=f9e218] [cursor=pointer]: 60% and above
+              - listitem [ref=f9e219]:
+                - generic [ref=f9e220] [cursor=pointer]: 70% and above
+              - listitem [ref=f9e221]:
+                - generic [ref=f9e222] [cursor=pointer]: 80% and above
+              - listitem [ref=f9e223]:
+                - generic [ref=f9e224] [cursor=pointer]: 90% and above
+        - generic [ref=f9e226]:
+          - generic [ref=f9e229]:
+            - generic [ref=f9e230]: "Sort by : Recommended"
+            - list [ref=f9e236]:
+              - listitem [ref=f9e237] [cursor=pointer]:
+                - heading "Bundles" [level=4] [ref=f9e239]
+              - listitem [ref=f9e241] [cursor=pointer]:
+                - heading "Country of Origin" [level=4] [ref=f9e243]
+              - listitem [ref=f9e245] [cursor=pointer]:
+                - heading "Size" [level=4] [ref=f9e247]
+              - listitem
+          - generic [ref=f9e250]:
+            - list [ref=f9e251]:
+              - listitem [ref=f9e252]:
+                - generic [ref=f9e253]:
+                  - generic [ref=f9e254]: "4.5"
+                  - generic [ref=f9e256]:
+                    - generic [ref=f9e257]: "|"
+                    - text: 10.2k
+                - generic [ref=f9e258]: AD
+                - link "Aristocrat FENCER Textured Water Resistant Hard Cabin Trolley Bag - 55 cm Aristocrat FENCER Hard Cabin Trolley Bag Rs. 1199Rs. 7500(Rs. 6301 OFF)" [ref=f9e259] [cursor=pointer]:
+                  - /url: trolley-bag/aristocrat/aristocrat-fencer-textured-water-resistant-hard-cabin-trolley-bag---55-cm/24014354/buy
+                  - img "Aristocrat FENCER Textured Water Resistant Hard Cabin Trolley Bag - 55 cm" [ref=f9e265]
+                  - generic [ref=f9e266]:
+                    - heading "Aristocrat" [level=3] [ref=f9e267]
+                    - heading "FENCER Hard Cabin Trolley Bag" [level=4] [ref=f9e268]
+                    - generic [ref=f9e269]:
+                      - generic [ref=f9e270]:
+                        - generic [ref=f9e271]: Rs. 1199
+                        - generic [ref=f9e272]: Rs. 7500
+                      - text: (Rs. 6301 OFF)
+              - listitem [ref=f9e273]:
+                - generic [ref=f9e274]: AD
+                - link "RARE RABBIT Gallardo Cabin Hard-Sided Trolley Suitcase with TSA Lock & 8 Silent Wheels NEW RARE RABBIT Hard-Sided Cabin Trolley Bag Rs. 4499Rs. 7999(Rs. 3500 OFF)" [ref=f9e275] [cursor=pointer]:
+                  - /url: trolley-bag/rare+rabbit/rare-rabbit-gallardo-cabin-hard-sided-trolley-suitcase-with-tsa-lock--8-silent-wheels/44326568/buy
+                  - generic [ref=f9e277]:
+                    - img "RARE RABBIT Gallardo Cabin Hard-Sided Trolley Suitcase with TSA Lock & 8 Silent Wheels" [ref=f9e281]
+                    - generic [ref=f9e282]: NEW
+                  - generic [ref=f9e283]:
+                    - heading "RARE RABBIT" [level=3] [ref=f9e284]
+                    - heading "Hard-Sided Cabin Trolley Bag" [level=4] [ref=f9e285]
+                    - generic [ref=f9e286]:
+                      - generic [ref=f9e287]:
+                        - generic [ref=f9e288]: Rs. 4499
+                        - generic [ref=f9e289]: Rs. 7999
+                      - text: (Rs. 3500 OFF)
+              - listitem [ref=f9e290]:
+                - generic [ref=f9e291]:
+                  - generic [ref=f9e292]: "4.6"
+                  - generic [ref=f9e294]:
+                    - generic [ref=f9e295]: "|"
+                    - text: "25"
+                - link "WROGN Brand Logo Printed Medium Duffel Bag WROGN Printed Medium Duffel Bag Rs. 612Rs. 1899(68% OFF)" [ref=f9e296] [cursor=pointer]:
+                  - /url: duffel-bag/wrogn/wrogn-brand-logo-printed-medium-duffel-bag/27139326/buy
+                  - img "WROGN Brand Logo Printed Medium Duffel Bag" [ref=f9e302]
+                  - generic [ref=f9e303]:
+                    - heading "WROGN" [level=3] [ref=f9e304]
+                    - heading "Printed Medium Duffel Bag" [level=4] [ref=f9e305]
+                    - generic [ref=f9e306]:
+                      - generic [ref=f9e307]:
+                        - generic [ref=f9e308]: Rs. 612
+                        - generic [ref=f9e309]: Rs. 1899
+                      - text: (68% OFF)
+              - listitem [ref=f9e310]:
+                - link "WROGN Unisex PU Laptop Bag WROGN Unisex PU Laptop Bag Rs. 1621Rs. 4999(68% OFF)" [ref=f9e311] [cursor=pointer]:
+                  - /url: laptop-bag/wrogn/wrogn-unisex-pu-laptop-bag/44472679/buy
+                  - img "WROGN Unisex PU Laptop Bag" [ref=f9e317]
+                  - generic [ref=f9e318]:
+                    - heading "WROGN" [level=3] [ref=f9e319]
+                    - heading "Unisex PU Laptop Bag" [level=4] [ref=f9e320]
+                    - generic [ref=f9e321]:
+                      - generic [ref=f9e322]:
+                        - generic [ref=f9e323]: Rs. 1621
+                        - generic [ref=f9e324]: Rs. 4999
+                      - text: (68% OFF)
+              - listitem [ref=f9e325]:
+                - generic [ref=f9e326]:
+                  - generic [ref=f9e327]: "5"
+                  - generic [ref=f9e329]:
+                    - generic [ref=f9e330]: "|"
+                    - text: "8"
+                - generic [ref=f9e331]: AD
+                - link "RARE RABBIT Hard-Sided Cabin Trolley Suitcase with TSA Lock & 8 Silent Wheels NEW RARE RABBIT Hard-Sided Cabin Trolley Bag Rs. 4499Rs. 7999(Rs. 3500 OFF)" [ref=f9e332] [cursor=pointer]:
+                  - /url: trolley-bag/rare+rabbit/rare-rabbit-hard-sided-cabin-trolley-suitcase-with-tsa-lock--8-silent-wheels/44326600/buy
+                  - generic [ref=f9e334]:
+                    - img "RARE RABBIT Hard-Sided Cabin Trolley Suitcase with TSA Lock & 8 Silent Wheels" [ref=f9e338]
+                    - generic [ref=f9e339]: NEW
+                  - generic [ref=f9e340]:
+                    - heading "RARE RABBIT" [level=3] [ref=f9e341]
+                    - heading "Hard-Sided Cabin Trolley Bag" [level=4] [ref=f9e342]
+                    - generic [ref=f9e343]:
+                      - generic [ref=f9e344]:
+                        - generic [ref=f9e345]: Rs. 4499
+                        - generic [ref=f9e346]: Rs. 7999
+                      - text: (Rs. 3500 OFF)
+              - listitem [ref=f9e347]:
+                - generic [ref=f9e348]:
+                  - generic [ref=f9e349]: "4.5"
+                  - generic [ref=f9e351]:
+                    - generic [ref=f9e352]: "|"
+                    - text: "446"
+                - link "WROGN Unisex Brand Logo Backpack with USB Charging Port WROGN Wrogn Backpack Rs. 969Rs. 2899(67% OFF)" [ref=f9e353] [cursor=pointer]:
+                  - /url: backpacks/wrogn/wrogn-unisex-brand-logo-backpack-with-usb-charging-port/39480367/buy
+                  - img "WROGN Unisex Brand Logo Backpack with USB Charging Port" [ref=f9e359]
+                  - generic [ref=f9e360]:
+                    - heading "WROGN" [level=3] [ref=f9e361]
+                    - heading "Wrogn Backpack" [level=4] [ref=f9e362]
+                    - generic [ref=f9e363]:
+                      - generic [ref=f9e364]:
+                        - generic [ref=f9e365]: Rs. 969
+                        - generic [ref=f9e366]: Rs. 2899
+                      - text: (67% OFF)
+              - listitem [ref=f9e367]:
+                - generic [ref=f9e368]:
+                  - generic [ref=f9e369]: "4.7"
+                  - generic [ref=f9e371]:
+                    - generic [ref=f9e372]: "|"
+                    - text: "137"
+                - link "Tommy Hilfiger Unisex Laptop Bag Tommy Hilfiger Unisex Laptop Bag Rs. 2449Rs. 4999(51% OFF)" [ref=f9e373] [cursor=pointer]:
+                  - /url: laptop-bag/tommy+hilfiger/tommy-hilfiger-unisex-laptop-bag/31382800/buy
+                  - img "Tommy Hilfiger Unisex Laptop Bag" [ref=f9e379]
+                  - generic [ref=f9e380]:
+                    - heading "Tommy Hilfiger" [level=3] [ref=f9e381]
+                    - heading "Unisex Laptop Bag" [level=4] [ref=f9e382]
+                    - generic [ref=f9e383]:
+                      - generic [ref=f9e384]:
+                        - generic [ref=f9e385]: Rs. 2449
+                        - generic [ref=f9e386]: Rs. 4999
+                      - text: (51% OFF)
+              - listitem [ref=f9e387]:
+                - generic [ref=f9e388]:
+                  - generic [ref=f9e389]: "4.5"
+                  - generic [ref=f9e391]:
+                    - generic [ref=f9e392]: "|"
+                    - text: 11.8k
+                - generic [ref=f9e393]: AD
+                - link "Safari Accent Vanilla Hard Sided 8 Wheel Cabin Trolley Bag Suitcase 56cm Safari Hard-Sided Cabin Trolley Bag Rs. 1649Rs. 8899(Rs. 7250 OFF)" [ref=f9e394] [cursor=pointer]:
+                  - /url: trolley-bag/safari/safari-accent-vanilla-hard-sided-8-wheel-cabin-trolley-bag-suitcase-56cm/34199533/buy
+                  - img "Safari Accent Vanilla Hard Sided 8 Wheel Cabin Trolley Bag Suitcase 56cm" [ref=f9e400]
+                  - generic [ref=f9e401]:
+                    - heading "Safari" [level=3] [ref=f9e402]
+                    - heading "Hard-Sided Cabin Trolley Bag" [level=4] [ref=f9e403]
+                    - generic [ref=f9e404]:
+                      - generic [ref=f9e405]:
+                        - generic [ref=f9e406]: Rs. 1649
+                        - generic [ref=f9e407]: Rs. 8899
+                      - text: (Rs. 7250 OFF)
+              - listitem [ref=f9e408]:
+                - generic [ref=f9e409]:
+                  - generic [ref=f9e410]: "4.5"
+                  - generic [ref=f9e412]:
+                    - generic [ref=f9e413]: "|"
+                    - text: 1.2k
+                - link "Mochi Unisex Laptop Bag Mochi Unisex Laptop Bag Rs. 1094Rs. 1990(45% OFF)" [ref=f9e414] [cursor=pointer]:
+                  - /url: laptop-bag/mochi/mochi-unisex-laptop-bag/31537049/buy
+                  - img "Mochi Unisex Laptop Bag" [ref=f9e420]
+                  - generic [ref=f9e421]:
+                    - heading "Mochi" [level=3] [ref=f9e422]
+                    - heading "Unisex Laptop Bag" [level=4] [ref=f9e423]
+                    - generic [ref=f9e424]:
+                      - generic [ref=f9e425]:
+                        - generic [ref=f9e426]: Rs. 1094
+                        - generic [ref=f9e427]: Rs. 1990
+                      - text: (45% OFF)
+              - listitem [ref=f9e428]:
+                - link "EVLINLIFESTYLE Adults-Unisex Backpack EVLINLIFESTYLE Regular Backpack Rs. 799Rs. 1999(60% OFF)" [ref=f9e429] [cursor=pointer]:
+                  - /url: backpacks/evlinlifestyle/evlinlifestyle-adults-unisex-backpack/46085980/buy
+                  - img "EVLINLIFESTYLE Adults-Unisex Backpack" [ref=f9e435]
+                  - generic [ref=f9e436]:
+                    - heading "EVLINLIFESTYLE" [level=3] [ref=f9e437]
+                    - heading "Regular Backpack" [level=4] [ref=f9e438]
+                    - generic [ref=f9e439]:
+                      - generic [ref=f9e440]:
+                        - generic [ref=f9e441]: Rs. 799
+                        - generic [ref=f9e442]: Rs. 1999
+                      - text: (60% OFF)
+              - listitem [ref=f9e443]:
+                - generic [ref=f9e444]:
+                  - generic [ref=f9e445]: "4.7"
+                  - generic [ref=f9e447]:
+                    - generic [ref=f9e448]: "|"
+                    - text: 1.4k
+                - generic [ref=f9e449]: AD
+                - link "Skybags Girls Bloom Yellow School Backpack with 3 Compartments & Detachable Pouch - 30L Skybags Graphic Bloom Print Backpack Rs. 999Rs. 2500(60% OFF)" [ref=f9e450] [cursor=pointer]:
+                  - /url: backpacks/skybags/skybags-girls-bloom-yellow-school-backpack-with-3-compartments--detachable-pouch---30l/30035398/buy
+                  - img "Skybags Girls Bloom Yellow School Backpack with 3 Compartments & Detachable Pouch - 30L" [ref=f9e456]
+                  - generic [ref=f9e457]:
+                    - heading "Skybags" [level=3] [ref=f9e458]
+                    - heading "Graphic Bloom Print Backpack" [level=4] [ref=f9e459]
+                    - generic [ref=f9e460]:
+                      - generic [ref=f9e461]:
+                        - generic [ref=f9e462]: Rs. 999
+                        - generic [ref=f9e463]: Rs. 2500
+                      - text: (60% OFF)
+              - listitem [ref=f9e464]:
+                - link "WALSON Women Korean Backpack Rs. 1318Rs. 2290(42% OFF)" [ref=f9e465] [cursor=pointer]:
+                  - /url: backpacks/walson/walson-women-colourblocked-contrast-detail-backpack/45905644/buy
+                  - generic [ref=f9e470]:
+                    - heading "WALSON" [level=3] [ref=f9e471]
+                    - heading "Women Korean Backpack" [level=4] [ref=f9e472]
+                    - generic [ref=f9e473]:
+                      - generic [ref=f9e474]:
+                        - generic [ref=f9e475]: Rs. 1318
+                        - generic [ref=f9e476]: Rs. 2290
+                      - text: (42% OFF)
+              - listitem [ref=f9e477]:
+                - generic [ref=f9e478]:
+                  - generic [ref=f9e479]: "4.1"
+                  - generic [ref=f9e481]:
+                    - generic [ref=f9e482]: "|"
+                    - text: 4k
+                - link "CULT Small Sports or Gym Duffel Bag Rs. 299Rs. 449(Rs. 150 OFF)" [ref=f9e483] [cursor=pointer]:
+                  - /url: duffel-bag/cult/cult-black-duffle-bag-unisex-adjustable-strap-mesh-pocket-gym--sport-bag-12-l/33248045/buy
+                  - generic [ref=f9e488]:
+                    - heading "CULT" [level=3] [ref=f9e489]
+                    - heading "Small Sports or Gym Duffel Bag" [level=4] [ref=f9e490]
+                    - generic [ref=f9e491]:
+                      - generic [ref=f9e492]:
+                        - generic [ref=f9e493]: Rs. 299
+                        - generic [ref=f9e494]: Rs. 449
+                      - text: (Rs. 150 OFF)
+              - listitem [ref=f9e495]:
+                - generic [ref=f9e496]:
+                  - generic [ref=f9e497]: "4.5"
+                  - generic [ref=f9e499]:
+                    - generic [ref=f9e500]: "|"
+                    - text: "405"
+                - generic [ref=f9e501]: AD
+                - link "Aristocrat Solana Cabin Trolley Bag Rs. 2999Rs. 8000(63% OFF)" [ref=f9e502] [cursor=pointer]:
+                  - /url: trolley-bag/aristocrat/aristocrat-unisex-solana-blue-small-hard-luggage-53cm-cabin-trolley-laptop-compatible/41134349/buy
+                  - generic [ref=f9e507]:
+                    - heading "Aristocrat" [level=3] [ref=f9e508]
+                    - heading "Solana Cabin Trolley Bag" [level=4] [ref=f9e509]
+                    - generic [ref=f9e510]:
+                      - generic [ref=f9e511]:
+                        - generic [ref=f9e512]: Rs. 2999
+                        - generic [ref=f9e513]: Rs. 8000
+                      - text: (63% OFF)
+              - listitem [ref=f9e514]:
+                - generic [ref=f9e515]:
+                  - generic [ref=f9e516]: "4.6"
+                  - generic [ref=f9e518]:
+                    - generic [ref=f9e519]: "|"
+                    - text: 4.7k
+                - link "FUR JADEN Unisex Textured Duffel Bag Rs. 899Rs. 4000(Rs. 3101 OFF)" [ref=f9e520] [cursor=pointer]:
+                  - /url: duffel-bag/fur+jaden/fur-jaden-unisex-brown-textured-duffel-bag/19230154/buy
+                  - generic [ref=f9e525]:
+                    - heading "FUR JADEN" [level=3] [ref=f9e526]
+                    - heading "Unisex Textured Duffel Bag" [level=4] [ref=f9e527]
+                    - generic [ref=f9e528]:
+                      - generic [ref=f9e529]:
+                        - generic [ref=f9e530]: Rs. 899
+                        - generic [ref=f9e531]: Rs. 4000
+                      - text: (Rs. 3101 OFF)
+              - listitem [ref=f9e532]:
+                - generic [ref=f9e533]:
+                  - generic [ref=f9e534]: "4.6"
+                  - generic [ref=f9e536]:
+                    - generic [ref=f9e537]: "|"
+                    - text: "655"
+                - link "Lino Perros Crossbody Bag with Pouch Rs. 2197Rs. 3995(45% OFF)" [ref=f9e538] [cursor=pointer]:
+                  - /url: handbags/lino+perros/lino-perros-crossbody-bag-with-pouch/30113678/buy
+                  - generic [ref=f9e543]:
+                    - heading "Lino Perros" [level=3] [ref=f9e544]
+                    - heading "Crossbody Bag with Pouch" [level=4] [ref=f9e545]
+                    - generic [ref=f9e546]:
+                      - generic [ref=f9e547]:
+                        - generic [ref=f9e548]: Rs. 2197
+                        - generic [ref=f9e549]: Rs. 3995
+                      - text: (45% OFF)
+              - listitem [ref=f9e550]:
+                - generic [ref=f9e551]:
+                  - generic [ref=f9e552]: "4.4"
+                  - generic [ref=f9e554]:
+                    - generic [ref=f9e555]: "|"
+                    - text: 15.3k
+                - generic [ref=f9e556]: AD
+                - link "Safari Hard-Sided Medium TrolleyBag Rs. 2149Rs. 10999(Rs. 8850 OFF)" [ref=f9e557] [cursor=pointer]:
+                  - /url: trolley-bag/safari/safari-accent-vanilla-hard-sided-8-wheel-medium-trolley-bag-suitcase-66cm/34199526/buy
+                  - generic [ref=f9e562]:
+                    - heading "Safari" [level=3] [ref=f9e563]
+                    - heading "Hard-Sided Medium TrolleyBag" [level=4] [ref=f9e564]
+                    - generic [ref=f9e565]:
+                      - generic [ref=f9e566]:
+                        - generic [ref=f9e567]: Rs. 2149
+                        - generic [ref=f9e568]: Rs. 10999
+                      - text: (Rs. 8850 OFF)
+              - listitem [ref=f9e569]:
+                - generic [ref=f9e570]:
+                  - generic [ref=f9e571]: "4.5"
+                  - generic [ref=f9e573]:
+                    - generic [ref=f9e574]: "|"
+                    - text: "699"
+                - link "Lino Perros Structured Sling Bag Rs. 2066Rs. 2995(31% OFF)" [ref=f9e575] [cursor=pointer]:
+                  - /url: handbags/lino+perros/lino-perros-structured-sling-bag/30113663/buy
+                  - generic [ref=f9e580]:
+                    - heading "Lino Perros" [level=3] [ref=f9e581]
+                    - heading "Structured Sling Bag" [level=4] [ref=f9e582]
+                    - generic [ref=f9e583]:
+                      - generic [ref=f9e584]:
+                        - generic [ref=f9e585]: Rs. 2066
+                        - generic [ref=f9e586]: Rs. 2995
+                      - text: (31% OFF)
+              - listitem [ref=f9e587]:
+                - generic [ref=f9e588]:
+                  - generic [ref=f9e589]: "4.4"
+                  - generic [ref=f9e591]:
+                    - generic [ref=f9e592]: "|"
+                    - text: "31"
+                - link "Puma Fundamental Small Sports Bag Rs. 1339Rs. 1999(33% OFF)" [ref=f9e593] [cursor=pointer]:
+                  - /url: duffel-bag/puma/puma-fundamental-extra-small-sports-bag/33484990/buy
+                  - generic [ref=f9e598]:
+                    - heading "Puma" [level=3] [ref=f9e599]
+                    - heading "Fundamental Small Sports Bag" [level=4] [ref=f9e600]
+                    - generic [ref=f9e601]:
+                      - generic [ref=f9e602]:
+                        - generic [ref=f9e603]: Rs. 1339
+                        - generic [ref=f9e604]: Rs. 1999
+                      - text: (33% OFF)
+              - listitem [ref=f9e605]:
+                - generic [ref=f9e606]:
+                  - generic [ref=f9e607]: "4.4"
+                  - generic [ref=f9e609]:
+                    - generic [ref=f9e610]: "|"
+                    - text: 10k
+                - generic [ref=f9e611]: AD
+                - link "Safari Set Of 3 Textured TrolleyBags Rs. 6199Rs. 33597(Rs. 27398 OFF)" [ref=f9e612] [cursor=pointer]:
+                  - /url: trolley-bag/safari/safari-accent-vanilla-set-of-3-hard-8-wheel-cabin-medium--large-trolley-bag-suitcase/34199539/buy
+                  - generic [ref=f9e617]:
+                    - heading "Safari" [level=3] [ref=f9e618]
+                    - heading "Set Of 3 Textured TrolleyBags" [level=4] [ref=f9e619]
+                    - generic [ref=f9e620]:
+                      - generic [ref=f9e621]:
+                        - generic [ref=f9e622]: Rs. 6199
+                        - generic [ref=f9e623]: Rs. 33597
+                      - text: (Rs. 27398 OFF)
+              - listitem [ref=f9e624]:
+                - generic [ref=f9e625]:
+                  - generic [ref=f9e626]: "4.3"
+                  - generic [ref=f9e628]:
+                    - generic [ref=f9e629]: "|"
+                    - text: "16"
+                - link "Gear Brand Logo Backpack Rs. 968Rs. 1899(49% OFF)" [ref=f9e630] [cursor=pointer]:
+                  - /url: backpacks/gear/gear-unisex-brand-logo-contrast-detail-backpack/44074305/buy
+                  - generic [ref=f9e635]:
+                    - heading "Gear" [level=3] [ref=f9e636]
+                    - heading "Brand Logo Backpack" [level=4] [ref=f9e637]
+                    - generic [ref=f9e638]:
+                      - generic [ref=f9e639]:
+                        - generic [ref=f9e640]: Rs. 968
+                        - generic [ref=f9e641]: Rs. 1899
+                      - text: (49% OFF)
+              - listitem [ref=f9e642]:
+                - link "NEW APRO Womens Sling bag Rs. 699Rs. 2999(77% OFF)" [ref=f9e643] [cursor=pointer]:
+                  - /url: handbags/apro/apro-pu-shoulder-bag/46025106/buy
+                  - generic [ref=f9e644]: NEW
+                  - generic [ref=f9e649]:
+                    - heading "APRO" [level=3] [ref=f9e650]
+                    - heading "Womens Sling bag" [level=4] [ref=f9e651]
+                    - generic [ref=f9e652]:
+                      - generic [ref=f9e653]:
+                        - generic [ref=f9e654]: Rs. 699
+                        - generic [ref=f9e655]: Rs. 2999
+                      - text: (77% OFF)
+              - listitem [ref=f9e656]:
+                - generic [ref=f9e657]:
+                  - generic [ref=f9e658]: "4.3"
+                  - generic [ref=f9e660]:
+                    - generic [ref=f9e661]: "|"
+                    - text: "6"
+                - generic [ref=f9e662]: AD
+                - link "NEW Snitch Hard Sided Cabin Trolley Bag Rs. 1599Rs. 3499(Rs. 1900 OFF)" [ref=f9e663] [cursor=pointer]:
+                  - /url: trolley-bag/snitch/snitch-hard-sided-cabin-trolley-bag-47l/45350567/buy
+                  - generic [ref=f9e664]: NEW
+                  - generic [ref=f9e669]:
+                    - heading "Snitch" [level=3] [ref=f9e670]
+                    - heading "Hard Sided Cabin Trolley Bag" [level=4] [ref=f9e671]
+                    - generic [ref=f9e672]:
+                      - generic [ref=f9e673]:
+                        - generic [ref=f9e674]: Rs. 1599
+                        - generic [ref=f9e675]: Rs. 3499
+                      - text: (Rs. 1900 OFF)
+              - listitem [ref=f9e676]:
+                - generic [ref=f9e677]:
+                  - generic [ref=f9e678]: "4.6"
+                  - generic [ref=f9e680]:
+                    - generic [ref=f9e681]: "|"
+                    - text: 25.3k
+                - link "Tommy Hilfiger Unisex Brand Logo Backpack Rs. 1599Rs. 3199(50% OFF)" [ref=f9e682] [cursor=pointer]:
+                  - /url: backpacks/tommy+hilfiger/tommy-hilfiger-joshua-unisex-15-inch-laptop-backpack-21l/9137493/buy
+                  - generic [ref=f9e687]:
+                    - heading "Tommy Hilfiger" [level=3] [ref=f9e688]
+                    - heading "Unisex Brand Logo Backpack" [level=4] [ref=f9e689]
+                    - generic [ref=f9e690]:
+                      - generic [ref=f9e691]:
+                        - generic [ref=f9e692]: Rs. 1599
+                        - generic [ref=f9e693]: Rs. 3199
+                      - text: (50% OFF)
+              - listitem [ref=f9e694]:
+                - generic [ref=f9e695]:
+                  - generic [ref=f9e696]: "4.7"
+                  - generic [ref=f9e698]:
+                    - generic [ref=f9e699]: "|"
+                    - text: 3.2k
+                - link "ZOUK Unisex FloMotif Amalia Daypack Rs. 1699Rs. 4579(Rs. 2880 OFF)" [ref=f9e700] [cursor=pointer]:
+                  - /url: backpacks/zouk/zouk-unisex-flomotif-amalia-daypack/32441289/buy
+                  - generic [ref=f9e705]:
+                    - heading "ZOUK" [level=3] [ref=f9e706]
+                    - heading "Unisex FloMotif Amalia Daypack" [level=4] [ref=f9e707]
+                    - generic [ref=f9e708]:
+                      - generic [ref=f9e709]:
+                        - generic [ref=f9e710]: Rs. 1699
+                        - generic [ref=f9e711]: Rs. 4579
+                      - text: (Rs. 2880 OFF)
+              - listitem [ref=f9e712]:
+                - generic [ref=f9e713]:
+                  - generic [ref=f9e714]: "4.3"
+                  - generic [ref=f9e716]:
+                    - generic [ref=f9e717]: "|"
+                    - text: "698"
+                - generic [ref=f9e718]: AD
+                - link "Aristocrat Hard-Sided Cabin Trolley Bag Rs. 1761Rs. 6790(74% OFF)" [ref=f9e719] [cursor=pointer]:
+                  - /url: trolley-bag/aristocrat/aristocrat-unisex-atlas-textured-hard-sided-cabin-trolley-bag/36836713/buy
+                  - generic [ref=f9e724]:
+                    - heading "Aristocrat" [level=3] [ref=f9e725]
+                    - heading "Hard-Sided Cabin Trolley Bag" [level=4] [ref=f9e726]
+                    - generic [ref=f9e727]:
+                      - generic [ref=f9e728]:
+                        - generic [ref=f9e729]: Rs. 1761
+                        - generic [ref=f9e730]: Rs. 6790
+                      - text: (74% OFF)
+              - listitem [ref=f9e731]:
+                - generic [ref=f9e732]:
+                  - generic [ref=f9e733]: "3.9"
+                  - generic [ref=f9e735]:
+                    - generic [ref=f9e736]: "|"
+                    - text: "35"
+                - link "WROGN Unisex Duffle Bag 35 L Rs. 858Rs. 3999(79% OFF)" [ref=f9e737] [cursor=pointer]:
+                  - /url: duffel-bag/wrogn/wrogn-medium-sports-or-gym-duffel-bag-35-l/34177545/buy
+                  - generic [ref=f9e742]:
+                    - heading "WROGN" [level=3] [ref=f9e743]
+                    - heading "Unisex Duffle Bag 35 L" [level=4] [ref=f9e744]
+                    - generic [ref=f9e745]:
+                      - generic [ref=f9e746]:
+                        - generic [ref=f9e747]: Rs. 858
+                        - generic [ref=f9e748]: Rs. 3999
+                      - text: (79% OFF)
+              - listitem [ref=f9e749]:
+                - generic [ref=f9e750]:
+                  - generic [ref=f9e751]: "4.4"
+                  - generic [ref=f9e753]:
+                    - generic [ref=f9e754]: "|"
+                    - text: "155"
+                - link "AMERICAN TOURISTER Unisex Laptop Bag Rs. 999Rs. 2500(Rs. 1501 OFF)" [ref=f9e755] [cursor=pointer]:
+                  - /url: laptop-bag/american+tourister/american-tourister-unisex-laptop-bag/42894430/buy
+                  - generic [ref=f9e760]:
+                    - heading "AMERICAN TOURISTER" [level=3] [ref=f9e761]
+                    - heading "Unisex Laptop Bag" [level=4] [ref=f9e762]
+                    - generic [ref=f9e763]:
+                      - generic [ref=f9e764]:
+                        - generic [ref=f9e765]: Rs. 999
+                        - generic [ref=f9e766]: Rs. 2500
+                      - text: (Rs. 1501 OFF)
+              - listitem [ref=f9e767]:
+                - generic [ref=f9e768]:
+                  - generic [ref=f9e769]: "4.2"
+                  - generic [ref=f9e771]:
+                    - generic [ref=f9e772]: "|"
+                    - text: "502"
+                - generic [ref=f9e773]: AD
+                - link "Aristocrat Set Of 2 Textured Trolley Bags Rs. 3647Rs. 15280(76% OFF)" [ref=f9e774] [cursor=pointer]:
+                  - /url: trolley-bag/aristocrat/aristocrat-set-of-2-atlas-textured-hard-sided-trolley-bags/36836717/buy
+                  - generic [ref=f9e779]:
+                    - heading "Aristocrat" [level=3] [ref=f9e780]
+                    - heading "Set Of 2 Textured Trolley Bags" [level=4] [ref=f9e781]
+                    - generic [ref=f9e782]:
+                      - generic [ref=f9e783]:
+                        - generic [ref=f9e784]: Rs. 3647
+                        - generic [ref=f9e785]: Rs. 15280
+                      - text: (76% OFF)
+              - listitem [ref=f9e786]:
+                - generic [ref=f9e787]:
+                  - generic [ref=f9e788]: "4.1"
+                  - generic [ref=f9e790]:
+                    - generic [ref=f9e791]: "|"
+                    - text: 2k
+                - link "WROGN Hard Shell Cabin Trolley Rs. 1999Rs. 7499(Rs. 5500 OFF)" [ref=f9e792] [cursor=pointer]:
+                  - /url: trolley-bag/wrogn/wrogn-kangaroo-hard-shell-cabin-trolley---37l/32668695/buy
+                  - generic [ref=f9e797]:
+                    - heading "WROGN" [level=3] [ref=f9e798]
+                    - heading "Hard Shell Cabin Trolley" [level=4] [ref=f9e799]
+                    - generic [ref=f9e800]:
+                      - generic [ref=f9e801]:
+                        - generic [ref=f9e802]: Rs. 1999
+                        - generic [ref=f9e803]: Rs. 7499
+                      - text: (Rs. 5500 OFF)
+              - listitem [ref=f9e804]:
+                - generic [ref=f9e805]:
+                  - generic [ref=f9e806]: "4.4"
+                  - generic [ref=f9e808]:
+                    - generic [ref=f9e809]: "|"
+                    - text: 2.3k
+                - link "Fastrack Structured Handheld Bag Rs. 1332Rs. 2149(38% OFF)" [ref=f9e810] [cursor=pointer]:
+                  - /url: laptop-bag/fastrack/fastrack-women-laptop-tote-bag-fits-upto-14-laptop/27303916/buy
+                  - generic [ref=f9e815]:
+                    - heading "Fastrack" [level=3] [ref=f9e816]
+                    - heading "Structured Handheld Bag" [level=4] [ref=f9e817]
+                    - generic [ref=f9e818]:
+                      - generic [ref=f9e819]:
+                        - generic [ref=f9e820]: Rs. 1332
+                        - generic [ref=f9e821]: Rs. 2149
+                      - text: (38% OFF)
+              - listitem [ref=f9e822]:
+                - generic [ref=f9e823]: AD
+                - link "NEW Snitch Cabin Trolley Suitcase Rs. 2199Rs. 3499(Rs. 1300 OFF)" [ref=f9e824] [cursor=pointer]:
+                  - /url: trolley-bag/snitch/snitch-vito-textured-hard-sided-cabin-trolley-suitcase---40-l/45350548/buy
+                  - generic [ref=f9e825]: NEW
+                  - generic [ref=f9e830]:
+                    - heading "Snitch" [level=3] [ref=f9e831]
+                    - heading "Cabin Trolley Suitcase" [level=4] [ref=f9e832]
+                    - generic [ref=f9e833]:
+                      - generic [ref=f9e834]:
+                        - generic [ref=f9e835]: Rs. 2199
+                        - generic [ref=f9e836]: Rs. 3499
+                      - text: (Rs. 1300 OFF)
+              - listitem [ref=f9e837]:
+                - link "StyleCast x Revolte Backpack Rs. 1385Rs. 3299(58% OFF)" [ref=f9e838] [cursor=pointer]:
+                  - /url: backpacks/stylecast+x+revolte/stylecast-x-revolte-women-backpack/44998920/buy
+                  - generic [ref=f9e843]:
+                    - heading "StyleCast x Revolte" [level=3] [ref=f9e844]
+                    - heading "Backpack" [level=4] [ref=f9e845]
+                    - generic [ref=f9e846]:
+                      - generic [ref=f9e847]:
+                        - generic [ref=f9e848]: Rs. 1385
+                        - generic [ref=f9e849]: Rs. 3299
+                      - text: (58% OFF)
+              - listitem [ref=f9e850]:
+                - generic [ref=f9e851]:
+                  - generic [ref=f9e852]: "4.3"
+                  - generic [ref=f9e854]:
+                    - generic [ref=f9e855]: "|"
+                    - text: 12.4k
+                - link "WROGN Unisex Backpack with USB Port 23L Rs. 769Rs. 3499(78% OFF)" [ref=f9e856] [cursor=pointer]:
+                  - /url: backpacks/wrogn/wrogn-unisex-backpack-with-usb-charging-port-23l/23849642/buy
+                  - generic [ref=f9e861]:
+                    - heading "WROGN" [level=3] [ref=f9e862]
+                    - heading "Unisex Backpack with USB Port 23L" [level=4] [ref=f9e863]
+                    - generic [ref=f9e864]:
+                      - generic [ref=f9e865]:
+                        - generic [ref=f9e866]: Rs. 769
+                        - generic [ref=f9e867]: Rs. 3499
+                      - text: (78% OFF)
+              - listitem [ref=f9e868]:
+                - generic [ref=f9e869]:
+                  - generic [ref=f9e870]: "4.2"
+                  - generic [ref=f9e872]:
+                    - generic [ref=f9e873]: "|"
+                    - text: "146"
+                - generic [ref=f9e874]: AD
+                - link "AMERICAN TOURISTER Set Of 3 Trolley Suitcase Rs. 8899Rs. 26140(Rs. 17241 OFF)" [ref=f9e875] [cursor=pointer]:
+                  - /url: trolley-bag/american+tourister/american-tourister-barcelona-set-of-3-solid-hard-sided-trolley-bags/19236224/buy
+                  - generic [ref=f9e880]:
+                    - heading "AMERICAN TOURISTER" [level=3] [ref=f9e881]
+                    - heading "Set Of 3 Trolley Suitcase" [level=4] [ref=f9e882]
+                    - generic [ref=f9e883]:
+                      - generic [ref=f9e884]:
+                        - generic [ref=f9e885]: Rs. 8899
+                        - generic [ref=f9e886]: Rs. 26140
+                      - text: (Rs. 17241 OFF)
+              - listitem [ref=f9e887]:
+                - generic [ref=f9e888]:
+                  - generic [ref=f9e889]: "4.5"
+                  - generic [ref=f9e891]:
+                    - generic [ref=f9e892]: "|"
+                    - text: 9.5k
+                - link "Lavie Cheer Framed Clutch Rs. 649Rs. 2499(Rs. 1850 OFF)" [ref=f9e893] [cursor=pointer]:
+                  - /url: clutches/lavie/lavie-womens-cheer-small-framed-clutch/15929160/buy
+                  - generic [ref=f9e898]:
+                    - heading "Lavie" [level=3] [ref=f9e899]
+                    - heading "Cheer Framed Clutch" [level=4] [ref=f9e900]
+                    - generic [ref=f9e901]:
+                      - generic [ref=f9e902]:
+                        - generic [ref=f9e903]: Rs. 649
+                        - generic [ref=f9e904]: Rs. 2499
+                      - text: (Rs. 1850 OFF)
+              - listitem [ref=f9e905]:
+                - generic [ref=f9e906]:
+                  - generic [ref=f9e907]: "4.3"
+                  - generic [ref=f9e909]:
+                    - generic [ref=f9e910]: "|"
+                    - text: "604"
+                - link "Mochi Textured Box Clutch Rs. 828Rs. 1690(51% OFF)" [ref=f9e911] [cursor=pointer]:
+                  - /url: clutches/mochi/mochi-textured-box-clutch/30928266/buy
+                  - generic [ref=f9e916]:
+                    - heading "Mochi" [level=3] [ref=f9e917]
+                    - heading "Textured Box Clutch" [level=4] [ref=f9e918]
+                    - generic [ref=f9e919]:
+                      - generic [ref=f9e920]:
+                        - generic [ref=f9e921]: Rs. 828
+                        - generic [ref=f9e922]: Rs. 1690
+                      - text: (51% OFF)
+              - listitem [ref=f9e923]:
+                - generic [ref=f9e924]:
+                  - generic [ref=f9e925]: "4.2"
+                  - generic [ref=f9e927]:
+                    - generic [ref=f9e928]: "|"
+                    - text: "22"
+                - generic [ref=f9e929]: AD
+                - link "NEW Roadster Hard Side Trolley Suitcase Rs. 1099Rs. 5199(Rs. 4100 OFF)" [ref=f9e930] [cursor=pointer]:
+                  - /url: trolley-bag/roadster/the-roadster-lifestyle-co-textured-hard-side-trolley-suitcase/43607971/buy
+                  - generic [ref=f9e931]: NEW
+                  - generic [ref=f9e936]:
+                    - heading "Roadster" [level=3] [ref=f9e937]
+                    - heading "Hard Side Trolley Suitcase" [level=4] [ref=f9e938]
+                    - generic [ref=f9e939]:
+                      - generic [ref=f9e940]:
+                        - generic [ref=f9e941]: Rs. 1099
+                        - generic [ref=f9e942]: Rs. 5199
+                      - text: (Rs. 4100 OFF)
+              - listitem [ref=f9e943]:
+                - generic [ref=f9e944]:
+                  - generic [ref=f9e945]: "4.4"
+                  - generic [ref=f9e947]:
+                    - generic [ref=f9e948]: "|"
+                    - text: 3.6k
+                - link "FUR JADEN Anti Theft Number Lock - 20L Rs. 699Rs. 2000(Rs. 1301 OFF)" [ref=f9e949] [cursor=pointer]:
+                  - /url: backpacks/fur+jaden/fur-jaden-unisex-black-anti-theft-number-lock-backpack---20l/20630650/buy
+                  - generic [ref=f9e954]:
+                    - heading "FUR JADEN" [level=3] [ref=f9e955]
+                    - heading "Anti Theft Number Lock - 20L" [level=4] [ref=f9e956]
+                    - generic [ref=f9e957]:
+                      - generic [ref=f9e958]:
+                        - generic [ref=f9e959]: Rs. 699
+                        - generic [ref=f9e960]: Rs. 2000
+                      - text: (Rs. 1301 OFF)
+              - listitem [ref=f9e961]:
+                - generic [ref=f9e962]:
+                  - generic [ref=f9e963]: "4.5"
+                  - generic [ref=f9e965]:
+                    - generic [ref=f9e966]: "|"
+                    - text: 3.7k
+                - link "Wildcraft Unisex Jet Plus 1 Backpack Rs. 1208Rs. 3099(61% OFF)" [ref=f9e967] [cursor=pointer]:
+                  - /url: backpacks/wildcraft/wildcraft-unisex-black-jet-plus-1-backpack/20381752/buy
+                  - generic [ref=f9e972]:
+                    - heading "Wildcraft" [level=3] [ref=f9e973]
+                    - heading "Unisex Jet Plus 1 Backpack" [level=4] [ref=f9e974]
+                    - generic [ref=f9e975]:
+                      - generic [ref=f9e976]:
+                        - generic [ref=f9e977]: Rs. 1208
+                        - generic [ref=f9e978]: Rs. 3099
+                      - text: (61% OFF)
+              - listitem [ref=f9e979]:
+                - generic [ref=f9e980]:
+                  - generic [ref=f9e981]: "4.4"
+                  - generic [ref=f9e983]:
+                    - generic [ref=f9e984]: "|"
+                    - text: 15.7k
+                - generic [ref=f9e985]: AD
+                - link "Safari Accent Hard Trolley Suitcase Rs. 1649Rs. 8899(Rs. 7250 OFF)" [ref=f9e986] [cursor=pointer]:
+                  - /url: trolley-bag/safari/safari-accent-blue-hard-sided-8-wheel-cabin-trolley-bag-suitcase-56cm/30096884/buy
+                  - generic [ref=f9e991]:
+                    - heading "Safari" [level=3] [ref=f9e992]
+                    - heading "Accent Hard Trolley Suitcase" [level=4] [ref=f9e993]
+                    - generic [ref=f9e994]:
+                      - generic [ref=f9e995]:
+                        - generic [ref=f9e996]: Rs. 1649
+                        - generic [ref=f9e997]: Rs. 8899
+                      - text: (Rs. 7250 OFF)
+              - listitem [ref=f9e998]:
+                - generic [ref=f9e999]:
+                  - generic [ref=f9e1000]: "4.5"
+                  - generic [ref=f9e1002]:
+                    - generic [ref=f9e1003]: "|"
+                    - text: 9.5k
+                - link "Lavie Cheer Framed Clutch Rs. 649Rs. 2499(Rs. 1850 OFF)" [ref=f9e1004] [cursor=pointer]:
+                  - /url: clutches/lavie/lavie-womens-cheer-small-framed-clutch/20471014/buy
+                  - generic [ref=f9e1009]:
+                    - heading "Lavie" [level=3] [ref=f9e1010]
+                    - heading "Cheer Framed Clutch" [level=4] [ref=f9e1011]
+                    - generic [ref=f9e1012]:
+                      - generic [ref=f9e1013]:
+                        - generic [ref=f9e1014]: Rs. 649
+                        - generic [ref=f9e1015]: Rs. 2499
+                      - text: (Rs. 1850 OFF)
+              - listitem [ref=f9e1016]:
+                - link "Mast & Harbour Medium Casual Duffel Bag Rs. 3740Rs. 8699(57% OFF)" [ref=f9e1017] [cursor=pointer]:
+                  - /url: duffel-bag/mast+%26+harbour/mast--harbour-textured-medium-casual-duffel-bag/45712268/buy
+                  - generic [ref=f9e1022]:
+                    - heading "Mast & Harbour" [level=3] [ref=f9e1023]
+                    - heading "Medium Casual Duffel Bag" [level=4] [ref=f9e1024]
+                    - generic [ref=f9e1025]:
+                      - generic [ref=f9e1026]:
+                        - generic [ref=f9e1027]: Rs. 3740
+                        - generic [ref=f9e1028]: Rs. 8699
+                      - text: (57% OFF)
+              - listitem [ref=f9e1029]:
+                - generic [ref=f9e1030]:
+                  - generic [ref=f9e1031]: "4.4"
+                  - generic [ref=f9e1033]:
+                    - generic [ref=f9e1034]: "|"
+                    - text: 2.3k
+                - generic [ref=f9e1035]: AD
+                - link "Safari Set Of 2 Textured Trolley Bags Rs. 3799Rs. 19898(Rs. 16099 OFF)" [ref=f9e1036] [cursor=pointer]:
+                  - /url: trolley-bag/safari/safari-accent-vanilla-set-of-2-hard-side-8-wheel-cabin--medium-trolley-bag-suitcase/34199546/buy
+                  - generic [ref=f9e1041]:
+                    - heading "Safari" [level=3] [ref=f9e1042]
+                    - heading "Set Of 2 Textured Trolley Bags" [level=4] [ref=f9e1043]
+                    - generic [ref=f9e1044]:
+                      - generic [ref=f9e1045]:
+                        - generic [ref=f9e1046]: Rs. 3799
+                        - generic [ref=f9e1047]: Rs. 19898
+                      - text: (Rs. 16099 OFF)
+              - listitem [ref=f9e1048]:
+                - generic [ref=f9e1049]:
+                  - generic [ref=f9e1050]: "4.4"
+                  - generic [ref=f9e1052]:
+                    - generic [ref=f9e1053]: "|"
+                    - text: "598"
+                - link "Mochi Textured Laptop Bag Rs. 1195Rs. 2490(52% OFF)" [ref=f9e1054] [cursor=pointer]:
+                  - /url: laptop-bag/mochi/mochi-textured-laptop-bag/22935910/buy
+                  - generic [ref=f9e1059]:
+                    - heading "Mochi" [level=3] [ref=f9e1060]
+                    - heading "Textured Laptop Bag" [level=4] [ref=f9e1061]
+                    - generic [ref=f9e1062]:
+                      - generic [ref=f9e1063]:
+                        - generic [ref=f9e1064]: Rs. 1195
+                        - generic [ref=f9e1065]: Rs. 2490
+                      - text: (52% OFF)
+              - listitem [ref=f9e1066]:
+                - generic [ref=f9e1067]:
+                  - generic [ref=f9e1068]: "4.4"
+                  - generic [ref=f9e1070]:
+                    - generic [ref=f9e1071]: "|"
+                    - text: "155"
+                - link "AMERICAN TOURISTER Unisex Laptop Bag Rs. 999Rs. 2500(Rs. 1501 OFF)" [ref=f9e1072] [cursor=pointer]:
+                  - /url: laptop-bag/american+tourister/american-tourister-unisex-laptop-bag/42894431/buy
+                  - generic [ref=f9e1077]:
+                    - heading "AMERICAN TOURISTER" [level=3] [ref=f9e1078]
+                    - heading "Unisex Laptop Bag" [level=4] [ref=f9e1079]
+                    - generic [ref=f9e1080]:
+                      - generic [ref=f9e1081]:
+                        - generic [ref=f9e1082]: Rs. 999
+                        - generic [ref=f9e1083]: Rs. 2500
+                      - text: (Rs. 1501 OFF)
+              - listitem [ref=f9e1084]:
+                - generic [ref=f9e1085]:
+                  - generic [ref=f9e1086]: "4.3"
+                  - generic [ref=f9e1088]:
+                    - generic [ref=f9e1089]: "|"
+                    - text: "854"
+                - generic [ref=f9e1090]: AD
+                - link "Safari Zuno Suitcase Rs. 6299Rs. 36597(Rs. 30298 OFF)" [ref=f9e1091] [cursor=pointer]:
+                  - /url: trolley-bag/safari/safari-zuno-champagne-set-of-3-hard-8-wheel-cabin-medium--large-trolley-bag-suitcase/41463735/buy
+                  - generic [ref=f9e1096]:
+                    - heading "Safari" [level=3] [ref=f9e1097]
+                    - heading "Zuno Suitcase" [level=4] [ref=f9e1098]
+                    - generic [ref=f9e1099]:
+                      - generic [ref=f9e1100]:
+                        - generic [ref=f9e1101]: Rs. 6299
+                        - generic [ref=f9e1102]: Rs. 36597
+                      - text: (Rs. 30298 OFF)
+              - listitem [ref=f9e1103]:
+                - generic [ref=f9e1104]:
+                  - generic [ref=f9e1105]: "5"
+                  - generic [ref=f9e1107]:
+                    - generic [ref=f9e1108]: "|"
+                    - text: "39"
+                - link "MANGO Women Printed Laptop Sleeve Rs. 1554Rs. 2590(40% OFF)" [ref=f9e1109] [cursor=pointer]:
+                  - /url: laptop-bag/mango/mango-women-printed-laptop-sleeve--up-to-14-inch/36365589/buy
+                  - generic [ref=f9e1114]:
+                    - heading "MANGO" [level=3] [ref=f9e1115]
+                    - heading "Women Printed Laptop Sleeve" [level=4] [ref=f9e1116]
+                    - generic [ref=f9e1117]:
+                      - generic [ref=f9e1118]:
+                        - generic [ref=f9e1119]: Rs. 1554
+                        - generic [ref=f9e1120]: Rs. 2590
+                      - text: (40% OFF)
+              - listitem [ref=f9e1121]:
+                - link "Mast & Harbour Unisex Laptop Bag Rs. 3171Rs. 6099(48% OFF)" [ref=f9e1122] [cursor=pointer]:
+                  - /url: laptop-bag/mast+%26+harbour/mast--harbour-unisex-laptop-bag/42246406/buy
+                  - generic [ref=f9e1127]:
+                    - heading "Mast & Harbour" [level=3] [ref=f9e1128]
+                    - heading "Unisex Laptop Bag" [level=4] [ref=f9e1129]
+                    - generic [ref=f9e1130]:
+                      - generic [ref=f9e1131]:
+                        - generic [ref=f9e1132]: Rs. 3171
+                        - generic [ref=f9e1133]: Rs. 6099
+                      - text: (48% OFF)
+              - listitem [ref=f9e1134]:
+                - generic [ref=f9e1135]:
+                  - generic [ref=f9e1136]: "4.4"
+                  - generic [ref=f9e1138]:
+                    - generic [ref=f9e1139]: "|"
+                    - text: "434"
+                - generic [ref=f9e1140]: AD
+                - link "Nasher Miles Auroville Textured Hard-Sided Cabin Trolley Suitcase Rs. 3399Rs. 16995(80% OFF)" [ref=f9e1141] [cursor=pointer]:
+                  - /url: trolley-bag/nasher+miles/nasher-miles-lime-yellow-auroville-hardside-check-in-luggage-bag-28-inch/18886256/buy
+                  - generic [ref=f9e1146]:
+                    - heading "Nasher Miles" [level=3] [ref=f9e1147]
+                    - heading "Auroville Textured Hard-Sided Cabin Trolley Suitcase" [level=4] [ref=f9e1148]
+                    - generic [ref=f9e1149]:
+                      - generic [ref=f9e1150]:
+                        - generic [ref=f9e1151]: Rs. 3399
+                        - generic [ref=f9e1152]: Rs. 16995
+                      - text: (80% OFF)
+              - listitem [ref=f9e1153]
+              - listitem [ref=f9e1154]
+              - listitem
+              - listitem
+              - listitem
+            - list [ref=f9e1156]:
+              - listitem: Page 1
+              - listitem: Previous
+              - listitem [ref=f9e1157]: Page 1 of 3755
+              - listitem [ref=f9e1158] [cursor=pointer]: Next
+            - generic [ref=f9e1162]:
+              - generic [ref=f9e1163]: Similar Products
+              - generic [ref=f9e1164] [cursor=pointer]: ✕
+    - paragraph [ref=f9e1169] [cursor=pointer]: UPTO ₹200 OFF
+  - contentinfo [ref=f9e1173]:
+    - generic [ref=f9e1175]:
+      - generic [ref=f9e1176]:
+        - heading "Bag price list" [level=2] [ref=f9e1177]
+        - table [ref=f9e1178]:
+          - rowgroup [ref=f9e1179]:
+            - row [ref=f9e1180]:
+              - columnheader "Bag" [ref=f9e1181]
+              - columnheader "PRICE (RS)" [ref=f9e1182]
+          - rowgroup [ref=f9e1183]:
+            - row [ref=f9e1184]:
+              - cell [ref=f9e1185]:
+                - link "WROGN Brand Logo Printed Medium Duffel Bag" [ref=f9e1186] [cursor=pointer]:
+                  - /url: duffel-bag/wrogn/wrogn-brand-logo-printed-medium-duffel-bag/27139326/buy
+              - cell "Rs. 612" [ref=f9e1187]
+            - row [ref=f9e1188]:
+              - cell [ref=f9e1189]:
+                - link "WROGN Unisex PU Laptop Bag" [ref=f9e1190] [cursor=pointer]:
+                  - /url: laptop-bag/wrogn/wrogn-unisex-pu-laptop-bag/44472679/buy
+              - cell "Rs. 1621" [ref=f9e1191]
+            - row [ref=f9e1192]:
+              - cell [ref=f9e1193]:
+                - link "WROGN Unisex Brand Logo Backpack with USB Charging Port" [ref=f9e1194] [cursor=pointer]:
+                  - /url: backpacks/wrogn/wrogn-unisex-brand-logo-backpack-with-usb-charging-port/39480367/buy
+              - cell "Rs. 969" [ref=f9e1195]
+            - row [ref=f9e1196]:
+              - cell [ref=f9e1197]:
+                - link "Tommy Hilfiger Unisex Laptop Bag" [ref=f9e1198] [cursor=pointer]:
+                  - /url: laptop-bag/tommy+hilfiger/tommy-hilfiger-unisex-laptop-bag/31382800/buy
+              - cell "Rs. 2449" [ref=f9e1199]
+            - row [ref=f9e1200]:
+              - cell [ref=f9e1201]:
+                - link "Mochi Unisex Laptop Bag" [ref=f9e1202] [cursor=pointer]:
+                  - /url: laptop-bag/mochi/mochi-unisex-laptop-bag/31537049/buy
+              - cell "Rs. 1094" [ref=f9e1203]
+            - row [ref=f9e1204]:
+              - cell [ref=f9e1205]:
+                - link "EVLINLIFESTYLE Adults-Unisex Backpack" [ref=f9e1206] [cursor=pointer]:
+                  - /url: backpacks/evlinlifestyle/evlinlifestyle-adults-unisex-backpack/46085980/buy
+              - cell "Rs. 799" [ref=f9e1207]
+            - row [ref=f9e1208]:
+              - cell [ref=f9e1209]:
+                - link "WALSON Women Colourblocked Contrast Detail Backpack" [ref=f9e1210] [cursor=pointer]:
+                  - /url: backpacks/walson/walson-women-colourblocked-contrast-detail-backpack/45905644/buy
+              - cell "Rs. 1318" [ref=f9e1211]
+            - row [ref=f9e1212]:
+              - cell [ref=f9e1213]:
+                - link "CULT Black Duffle Bag Unisex Adjustable Strap Mesh pocket Gym & Sport Bag 12 L" [ref=f9e1214] [cursor=pointer]:
+                  - /url: duffel-bag/cult/cult-black-duffle-bag-unisex-adjustable-strap-mesh-pocket-gym--sport-bag-12-l/33248045/buy
+              - cell "Rs. 299" [ref=f9e1215]
+            - row [ref=f9e1216]:
+              - cell [ref=f9e1217]:
+                - link "FUR JADEN Unisex Brown Textured Duffel Bag" [ref=f9e1218] [cursor=pointer]:
+                  - /url: duffel-bag/fur+jaden/fur-jaden-unisex-brown-textured-duffel-bag/19230154/buy
+              - cell "Rs. 899" [ref=f9e1219]
+            - row [ref=f9e1220]:
+              - cell [ref=f9e1221]:
+                - link "Lino Perros Crossbody Bag with Pouch" [ref=f9e1222] [cursor=pointer]:
+                  - /url: handbags/lino+perros/lino-perros-crossbody-bag-with-pouch/30113678/buy
+              - cell "Rs. 2197" [ref=f9e1223]
+        - generic [ref=f9e1224]: Data last updated on 15/09/2026
+      - heading "buy Bag" [level=2] [ref=f9e1225]
+      - generic [ref=f9e1226]:
+        - 'heading "The Perfect Companion: Bags That Make a Statement" [level=2] [ref=f9e1227]'
+        - paragraph [ref=f9e1228]: Your choice of the bag depends heavily on style and function. Whether it is a roomy tote for shopping or a sleek clutch for parties, the right one offers ease and elevates your look. On Myntra, a diverse collection of bags online awaits, featuring stylish and practical options suited to every taste and budget.
+        - heading "Unlock a World of Bags on Myntra" [level=2] [ref=f9e1229]
+        - paragraph [ref=f9e1230]: "Start scrolling through our selection of bag designs and enhance your accessory collection:"
+        - listitem [ref=f9e1231]:
+          - strong [ref=f9e1232]: "Backpacks:"
+          - text: These distribute weight evenly, have comfortable straps, and come with multiple compartments. Modern designs feature anti-theft pockets and USB charging ports for daily commuters.
+        - listitem [ref=f9e1233]:
+          - strong [ref=f9e1234]: "Clutches:"
+          - text: These small, elegant bags for women are designed for special occasions to hold just the essentials. Many include detachable chains or wrist straps for ease of carrying.
+        - listitem [ref=f9e1235]:
+          - strong [ref=f9e1236]: "Duffel Bags:"
+          - text: These provide roomy storage for gym sessions or weekend getaways without being bulky. They also feature separate compartments for wet items or shoes.
+        - listitem [ref=f9e1237]:
+          - strong [ref=f9e1238]: "Handbags:"
+          - text: These wardrobe essentials come in countless styles, from structured totes to slouchy hobos. The right selection of
+          - link "handbags" [ref=f9e1239] [cursor=pointer]:
+            - /url: https://www.myntra.com/handbags
+          - text: can elevate even the simplest outfit.
+        - listitem [ref=f9e1240]:
+          - strong [ref=f9e1241]: "Laptop Bags:"
+          - text: With padded protection for computers, they provide storage for work essentials. Getting
+          - link "laptop bags" [ref=f9e1242] [cursor=pointer]:
+            - /url: https://www.myntra.com/laptop-bags
+          - text: that are both functional and stylish also gives you a chic look in the office.
+        - listitem [ref=f9e1243]:
+          - strong [ref=f9e1244]: "Messenger Bags:"
+          - text: These bags feature cross-body straps and flap closures, offering quick access to belongings. They provide casual yet organised carrying solutions for daily items.
+        - listitem [ref=f9e1245]:
+          - strong [ref=f9e1246]: "Rucksacks:"
+          - text: These offer vintage appeal with drawstring closures under flaps. Such bags for men and women are popular among hikers and fashion-forward individuals.
+        - listitem [ref=f9e1247]:
+          - strong [ref=f9e1248]: "Trolley Bags:"
+          - text: Making navigating airports easier, they have smooth wheels and extendable handles.
+          - link "Trolley Bags" [ref=f9e1249] [cursor=pointer]:
+            - /url: https://www.myntra.com/trolley-bags
+          - text: come in various sizes and have revolutionised travel packing.
+        - listitem [ref=f9e1250]:
+          - strong [ref=f9e1251]: "Tablet Sleeves:"
+          - text: These offer protection for electronic devices without the bulk. Many include extra pockets for cables and accessories.
+        - listitem [ref=f9e1252]:
+          - strong [ref=f9e1253]: "Waist Pouches:"
+          - text: These trendy bags have made a stylish comeback while keeping valuables secure and accessible. They free up your hands during busy outings.
+        - heading "How to Select the Right Bag for Yourself" [level=2] [ref=f9e1254]
+        - paragraph [ref=f9e1255]: "Finding the perfect bag requires some careful contemplation. Thus, here are some tips from Myntra to help you select one:"
+        - listitem [ref=f9e1256]:
+          - strong [ref=f9e1257]: "Needs:"
+          - text: Think about what you carry regularly. A spacious tote or backpack is ideal if you carry a laptop, books, and lunch. For minimalists, a smaller crossbody might be perfect.
+        - listitem [ref=f9e1258]:
+          - strong [ref=f9e1259]: "Lifestyle:"
+          - text: If you are always on the move, choose a durable carrier with comfortable straps. For office workers, a structured handbag or laptop bag organises essentials and looks professional.
+        - listitem [ref=f9e1260]:
+          - strong [ref=f9e1261]: "Versatility:"
+          - text: A classic and neutral-coloured carrier works with multiple outfits and occasions. Something in black, tan, or navy can be quite versatile.
+        - listitem [ref=f9e1262]:
+          - strong [ref=f9e1263]: "Comfort:"
+          - text: The straps should sit comfortably on your shoulder or across your body. The weight should feel balanced, and the size should be proportional to your frame for comfort and style.
+        - listitem [ref=f9e1264]:
+          - strong [ref=f9e1265]: "Price:"
+          - text: Setting a budget helps narrow down your choices while searching. Investing in good-quality branded bags, for instance, may last you longer.
+        - heading "Shop Bags Online on Myntra" [level=2] [ref=f9e1266]
+        - paragraph [ref=f9e1267]: Myntra is your one-stop shop to buy bags online from the comfort of your home! Our vast assortment has something for everyone, from school backpacks and fancy handbags to trolleys. We also offer jaw-dropping deals and free delivery if you spend over Rs. 1,199! Explore our range of premium and affordable bags and have them shipped to your door!
+        - generic [ref=f9e1268]:
+          - generic [ref=f9e1269]:
+            - paragraph:
+              - strong
+            - heading [level=3] [ref=f9e1270]:
+              - strong [ref=f9e1271]: What kind of bags do women love to carry?
+            - paragraph
+            - generic [ref=f9e1272]:
+              - paragraph
+              - generic [ref=f9e1273]: Women typically love to carry totes, crossbody bags, and clutches for their versatility. Handbags, especially those with multiple compartments and adjustable straps, are popular for their practicality.
+              - paragraph
+          - generic [ref=f9e1274]:
+            - paragraph:
+              - strong
+            - heading [level=3] [ref=f9e1275]:
+              - strong [ref=f9e1276]: Is it good to gift a bag to someone?
+            - paragraph
+            - generic [ref=f9e1277]:
+              - paragraph
+              - generic [ref=f9e1278]: Yes, bags are thoughtful gifts. When gifting one, consider the recipients style and daily needs to choose something they will genuinely appreciate.
+              - paragraph
+        - paragraph [ref=f9e1279]:
+          - strong [ref=f9e1280]: "SHOP BY BRAND:"
+        - paragraph [ref=f9e1281]:
+          - link "Image" [ref=f9e1282] [cursor=pointer]:
+            - /url: https://www.myntra.com/image
+          - text: "|"
+          - link "Samsung" [ref=f9e1283] [cursor=pointer]:
+            - /url: https://www.myntra.com/samsung
+          - text: "|"
+          - link "H&M" [ref=f9e1284] [cursor=pointer]:
+            - /url: https://www.myntra.com/h&m
+          - text: "|"
+          - link "Puma" [ref=f9e1285] [cursor=pointer]:
+            - /url: https://www.myntra.com/puma
+          - text: "|"
+          - link "Adidas" [ref=f9e1286] [cursor=pointer]:
+            - /url: https://www.myntra.com/adidas
+          - text: "|"
+          - link "Urbanic" [ref=f9e1287] [cursor=pointer]:
+            - /url: https://www.myntra.com/urbanic
+          - text: "|"
+          - link "Jockey" [ref=f9e1288] [cursor=pointer]:
+            - /url: https://www.myntra.com/jockey
+          - text: "|"
+          - link "Crocs" [ref=f9e1289] [cursor=pointer]:
+            - /url: https://www.myntra.com/crocs
+          - text: "|"
+          - link "Boat" [ref=f9e1290] [cursor=pointer]:
+            - /url: https://www.myntra.com/boat
+          - text: "|"
+          - link "Titan" [ref=f9e1291] [cursor=pointer]:
+            - /url: https://www.myntra.com/titan
+          - text: "|"
+          - link "Butterflies" [ref=f9e1292] [cursor=pointer]:
+            - /url: https://www.myntra.com/butterflies
+          - text: "|"
+          - link "Max" [ref=f9e1293] [cursor=pointer]:
+            - /url: https://www.myntra.com/max
+          - text: "|"
+          - link "Home Centre" [ref=f9e1294] [cursor=pointer]:
+            - /url: https://www.myntra.com/home-centre
+          - text: "|"
+          - link "Ooka" [ref=f9e1295] [cursor=pointer]:
+            - /url: https://www.myntra.com/ooka
+          - text: "|"
+          - link "Royal Enfield" [ref=f9e1296] [cursor=pointer]:
+            - /url: https://www.myntra.com/royal-enfield
+          - text: "|"
+          - link "Status" [ref=f9e1297] [cursor=pointer]:
+            - /url: https://www.myntra.com/status
+          - text: "|"
+          - link "Cat" [ref=f9e1298] [cursor=pointer]:
+            - /url: https://www.myntra.com/cat
+          - text: "|"
+          - link "Noise" [ref=f9e1299] [cursor=pointer]:
+            - /url: https://www.myntra.com/noise
+          - text: "|"
+          - link "Mango" [ref=f9e1300] [cursor=pointer]:
+            - /url: https://www.myntra.com/mango
+          - text: "|"
+          - link "Contacts" [ref=f9e1301] [cursor=pointer]:
+            - /url: https://www.myntra.com/contacts
+      - generic [ref=f9e1302]:
+        - generic [ref=f9e1303]:
+          - paragraph [ref=f9e1304]:
+            - link "ONLINE SHOPPING" [ref=f9e1305] [cursor=pointer]:
+              - /url: /?src=onlineShopping
+          - link "Men" [ref=f9e1306] [cursor=pointer]:
+            - /url: /shop/men
+          - link "Women" [ref=f9e1307] [cursor=pointer]:
+            - /url: /shop/women
+          - link "Kids" [ref=f9e1308] [cursor=pointer]:
+            - /url: /shop/kids
+          - link "Home" [ref=f9e1309] [cursor=pointer]:
+            - /url: /shop/home-living
+          - link "Beauty" [ref=f9e1310] [cursor=pointer]:
+            - /url: /personal-care
+          - link "Genz" [ref=f9e1311] [cursor=pointer]:
+            - /url: /shop/fwd-women
+          - link "Gift Cards" [ref=f9e1312] [cursor=pointer]:
+            - /url: /giftcard
+          - link "Myntra Insider" [ref=f9e1313] [cursor=pointer]:
+            - /url: /myntrainsider?cache=false
+          - paragraph [ref=f9e1314]: USEFUL LINKS
+          - link "Blog" [ref=f9e1315] [cursor=pointer]:
+            - /url: http://blog.myntra.com/
+          - link "Careers" [ref=f9e1316] [cursor=pointer]:
+            - /url: https://careers.myntra.com
+          - link "Site Map" [ref=f9e1317] [cursor=pointer]:
+            - /url: /sitemap
+          - link "Corporate Information" [ref=f9e1318] [cursor=pointer]:
+            - /url: /corp-info
+          - link "Whitehat" [ref=f9e1319] [cursor=pointer]:
+            - /url: /security/whitehat
+          - link "Cleartrip" [ref=f9e1320] [cursor=pointer]:
+            - /url: https://www.cleartrip.com/
+          - link "Myntra Global" [ref=f9e1321] [cursor=pointer]:
+            - /url: https://www.myntraglobal.com/
+        - generic [ref=f9e1322]:
+          - paragraph [ref=f9e1323]: CUSTOMER POLICIES
+          - link "Contact Us" [ref=f9e1324] [cursor=pointer]:
+            - /url: /contactus
+          - link "FAQ" [ref=f9e1325] [cursor=pointer]:
+            - /url: /faqs
+          - link "T&C" [ref=f9e1326] [cursor=pointer]:
+            - /url: /tac
+          - link "Terms Of Use" [ref=f9e1327] [cursor=pointer]:
+            - /url: /termsofuse
+          - link "Track Orders" [ref=f9e1328] [cursor=pointer]:
+            - /url: /my/orders
+          - link "Shipping" [ref=f9e1329] [cursor=pointer]:
+            - /url: /faqs#shipping
+          - link "Cancellation" [ref=f9e1330] [cursor=pointer]:
+            - /url: /faqs#cancel
+          - link "Privacy policy" [ref=f9e1331] [cursor=pointer]:
+            - /url: /privacypolicy
+          - link "Grievance Redressal" [ref=f9e1332] [cursor=pointer]:
+            - /url: /grievanceredressal
+          - link "FSSAI Food Safety Connect app" [ref=f9e1333] [cursor=pointer]:
+            - /url: https://fssai.gov.in/cms/food-safety-connect.php
+        - generic [ref=f9e1334]:
+          - paragraph [ref=f9e1335]: EXPERIENCE MYNTRA APP ON MOBILE
+          - generic:
+            - link:
+              - /url: https://play.google.com/store/apps/details?id=com.myntra.android
+            - link:
+              - /url: https://itunes.apple.com/in/app/myntra-indias-fashion-store/id907394059
+          - generic [ref=f9e1336]: KEEP IN TOUCH
+          - link [ref=f9e1337] [cursor=pointer]:
+            - /url: https://www.facebook.com/myntra
+          - link:
+            - /url: https://twitter.com/myntra
+          - link:
+            - /url: https://www.youtube.com/user/myntradotcom
+          - link:
+            - /url: https://www.instagram.com/myntra
+        - generic [ref=f9e1339]:
+          - generic [ref=f9e1343]:
+            - strong [ref=f9e1344]: 100% ORIGINAL
+            - text: guarantee for all products at myntra.com
+          - generic [ref=f9e1348]:
+            - strong [ref=f9e1349]: Return within 14days
+            - text: of receiving your order
+      - generic [ref=f9e1351]:
+        - separator [ref=f9e1352]
+        - generic [ref=f9e1353]: POPULAR SEARCHES
+        - generic [ref=f9e1354]:
+          - link "Men Backpacks |" [ref=f9e1355] [cursor=pointer]:
+            - /url: /men-backpacks
+          - link "Backpacks |" [ref=f9e1356] [cursor=pointer]:
+            - /url: /backpacks
+          - link "Men Handbags |" [ref=f9e1357] [cursor=pointer]:
+            - /url: /men-handbags
+          - link "Men Laptop Bag |" [ref=f9e1358] [cursor=pointer]:
+            - /url: /men-laptop-bag
+          - link "Men Messenger Bags |" [ref=f9e1359] [cursor=pointer]:
+            - /url: /men-messenger-bags
+          - link "Women Backpacks |" [ref=f9e1360] [cursor=pointer]:
+            - /url: /women-backpacks
+          - link "Girls Backpacks |" [ref=f9e1361] [cursor=pointer]:
+            - /url: /girls-backpacks
+          - link "Women Laptop Bags |" [ref=f9e1362] [cursor=pointer]:
+            - /url: /women-laptop-bags
+          - link "Women Messenger Bags |" [ref=f9e1363] [cursor=pointer]:
+            - /url: /women-messenger-bags
+          - link "Girls Handbags |" [ref=f9e1364] [cursor=pointer]:
+            - /url: /girls-handbags
+          - link "Handbags |" [ref=f9e1365] [cursor=pointer]:
+            - /url: /handbags
+          - link "Handbags For Women |" [ref=f9e1366] [cursor=pointer]:
+            - /url: /handbags-for-women
+          - link "School Bags |" [ref=f9e1367] [cursor=pointer]:
+            - /url: /school-bags
+          - link "Sling Bag |" [ref=f9e1368] [cursor=pointer]:
+            - /url: /sling-bags
+          - link "Tote Bag |" [ref=f9e1369] [cursor=pointer]:
+            - /url: /tote-bags
+          - link "Jute Bags |" [ref=f9e1370] [cursor=pointer]:
+            - /url: /jute-bags
+          - link "Sunglasses |" [ref=f9e1371] [cursor=pointer]:
+            - /url: /men-sunglasses
+          - link "Side Bags |" [ref=f9e1372] [cursor=pointer]:
+            - /url: /side-bags
+          - link "Gym Bag For Men |" [ref=f9e1373] [cursor=pointer]:
+            - /url: /gym-bags-men
+          - link "Kids Bags |" [ref=f9e1374] [cursor=pointer]:
+            - /url: /kids-bags-backpacks
+          - link "Cloth Bags |" [ref=f9e1375] [cursor=pointer]:
+            - /url: /canvas-bags
+          - link "Clutch Bags |" [ref=f9e1376] [cursor=pointer]:
+            - /url: /clutch-bags
+          - link "Waist Bag |" [ref=f9e1377] [cursor=pointer]:
+            - /url: /waist-pouch
+          - link "Duffle Bags For Men |" [ref=f9e1378] [cursor=pointer]:
+            - /url: /men-duffle-bags
+          - link "Wallet |" [ref=f9e1379] [cursor=pointer]:
+            - /url: /wallets
+          - link "Wallet For Women |" [ref=f9e1380] [cursor=pointer]:
+            - /url: /women-wallets
+          - link "Trolley Bags |" [ref=f9e1381] [cursor=pointer]:
+            - /url: /trolley-bags
+          - link "Earphones |" [ref=f9e1382] [cursor=pointer]:
+            - /url: /earphones
+          - link "Caps |" [ref=f9e1383] [cursor=pointer]:
+            - /url: /caps
+          - link "Belts |" [ref=f9e1384] [cursor=pointer]:
+            - /url: /belts
+          - link "Clutches |" [ref=f9e1385] [cursor=pointer]:
+            - /url: /clutches
+          - link "Wrist Bands |" [ref=f9e1386] [cursor=pointer]:
+            - /url: /wristbands
+          - link "Rucksack |" [ref=f9e1387] [cursor=pointer]:
+            - /url: /rucksacks
+          - link "Shoes |" [ref=f9e1388] [cursor=pointer]:
+            - /url: /shoes
+          - link "Ladies Purse |" [ref=f9e1389] [cursor=pointer]:
+            - /url: /women-bags-wallets
+          - link "Hand Gloves |" [ref=f9e1390] [cursor=pointer]:
+            - /url: /gloves
+          - link "Passport Holder |" [ref=f9e1391] [cursor=pointer]:
+            - /url: /passport-holder
+          - link "Headband |" [ref=f9e1392] [cursor=pointer]:
+            - /url: /headband
+          - link "Aviators |" [ref=f9e1393] [cursor=pointer]:
+            - /url: /aviators
+          - link "Ties |" [ref=f9e1394] [cursor=pointer]:
+            - /url: /ties
+          - link "Rings |" [ref=f9e1395] [cursor=pointer]:
+            - /url: /rings
+          - link "Bracelet |" [ref=f9e1396] [cursor=pointer]:
+            - /url: /bracelet
+          - link "Fitness Band |" [ref=f9e1397] [cursor=pointer]:
+            - /url: /fitness-bands
+          - link "Scarves |" [ref=f9e1398] [cursor=pointer]:
+            - /url: /scarves
+          - link "Suspenders |" [ref=f9e1399] [cursor=pointer]:
+            - /url: /suspenders
+          - link "Sipper |" [ref=f9e1400] [cursor=pointer]:
+            - /url: /sipper-bottle
+          - link "Watches |" [ref=f9e1401] [cursor=pointer]:
+            - /url: /watches
+          - link "Girls Watches |" [ref=f9e1402] [cursor=pointer]:
+            - /url: /girls-watches
+          - link "Smart Watches |" [ref=f9e1403] [cursor=pointer]:
+            - /url: /smart-watches
+          - link "Mens Watches" [ref=f9e1404] [cursor=pointer]:
+            - /url: /mens-watches
+      - generic [ref=f9e1405]:
+        - generic [ref=f9e1406]:
+          - text: In case of any concern,
+          - link "Contact Us" [ref=f9e1407] [cursor=pointer]:
+            - /url: /contactus
+        - generic [ref=f9e1408]: © 2026 www.myntra.com. All rights reserved.
+        - link "A Flipkart company" [ref=f9e1410] [cursor=pointer]:
+          - /url: https://www.flipkart.com/
+```
+
+# Test source
+
+```ts
+  1  | import { test, expect } from '@playwright/test';
+  2  | import console from 'node:console';
+  3  | 
+  4  | test('Myntra', async ({ page }) => {
+  5  | 
+  6  |     await page.goto("https://www.myntra.com/");
+  7  |     await page.locator('//div[@class="desktop-pSearchlinks"]/a[@href="/bags"]').click();
+> 8  |     await page.waitForTimeout(5000);
+     |                ^ Error: page.waitForTimeout: Test timeout of 30000ms exceeded.
+  9  | 
+  10 | //     // const products = await page.$$('//li[@class="product-base"]');
+  11 | //     // for (const product of products) {
+  12 | //     //     const producttext = await product.textContent();
+  13 | //     //  //   console.log(producttext);
+  14 | //     // }
+  15 | 
+  16 | // const rateLocators1 = page.locator('//li[@class="product-base"]/a/div[@class="product-productMetaInfo"]/div[@class="product-price"]/span/span[@class="product-discountedPrice"]');
+  17 | // const rateLocators2 = page.locator('//li[contains(@class,"product-base")][not(.//span[contains(@class,"strike")])]//div[contains(@class,"product-price")]//span');
+  18 | 
+  19 | // const combined = rateLocators1.or(rateLocators2);
+  20 | // const rateTexts = await combined.allTextContents();
+  21 | // console.log(rateTexts);
+  22 | 
+  23 | // const prices = rateTexts.map(text => {
+  24 | // return Number(text.replace(/[^0-9]/g, ''));
+  25 | // });
+  26 | 
+  27 | // const lowestPrice = Math.min(...prices);
+  28 | // console.log('Lowest price:', lowestPrice);
+  29 | });
+```

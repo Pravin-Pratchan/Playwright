@@ -20,11 +20,10 @@ test('Myntra', async ({ page }) => {
 
     //3. Find the product name for the minimum price
     async function getProductName(page, minPrice) {
-        const productName = await page.locator(`//li[contains(@class,'product-base')][.//*[(contains(@class,'product-discountedPrice') or contains(@class,'product-price')) and contains(.,'${minPrice}')]]`).locator('.product-product').first().innerText();
+        const productName = await page.locator(`//li[contains(@class,'product-base')][.//*[(contains(@class,'product-discountedPrice') or contains(@class,'product-price')) and contains(.,'${minPrice}')]]`).locator('.product-brand').first().innerText();
         return productName;
     }
 
     const productName = await getProductName(page, minPrice);
     console.log("Product name: " + productName);
-
 });

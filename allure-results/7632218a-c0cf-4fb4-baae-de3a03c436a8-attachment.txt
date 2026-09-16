@@ -1,0 +1,1 @@
+locator('//li[contains(@class,\'product-base\')][not(.//span[contains(@class,\'strike\')])]//div[contains(@class,\'product-price\')]//span')

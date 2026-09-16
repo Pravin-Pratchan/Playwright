@@ -1,0 +1,2 @@
+Total Number of Products: 50
+Minimum price is:169

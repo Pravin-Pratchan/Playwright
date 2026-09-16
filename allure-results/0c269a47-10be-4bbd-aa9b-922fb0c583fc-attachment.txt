@@ -1,0 +1,52 @@
+Total Number of Products: 50
+Minimum price is: 169
+Product: CLOTHIFY | Price: 7251899
+Product: CLOTHIFY | Price: 417899
+Product: Marks & Spencer | Price: 679799
+Product: DAMN GUD DG | Price: 4651000
+Product: Moda Rapido | Price: 224999
+Product: BABY GO | Price: 6962599
+Product: YK Disney | Price: 327799
+Product: CLOTHIFY | Price: 7491299
+Product: HELLCAT | Price: 3953897
+Product: Googo Gaaga | Price: 6311400
+Product: U.S. Polo Assn. Kids | Price: 7141299
+Product: Decathlon | Price: 349549
+Product: PUSHANKA | Price: 4181200
+Product: U.S. Polo Assn. Kids | Price: 7141099
+Product: KEESOR | Price: 422899
+Product: BABY GO | Price: 6962599
+Product: CLOTHIFY | Price: 7251899
+Product: Marks & Spencer | Price: 799
+Product: dostitch | Price: 399999
+Product: CLOTHIFY | Price: 7251899
+Product: LULU & SKY | Price: 8842333
+Product: FIONAA TRENDZ | Price: 303799
+Product: United Colors of Benetton | Price: 10251799
+Product: U.S. Polo Assn. Kids | Price: 549999
+Product: V-Mart | Price: 426449
+Product: United Colors of Benetton | Price: 10251799
+Product: AKIBA | Price: 465999
+Product: KNITROOT | Price: 379449
+Product: United Colors of Benetton | Price: 8541499
+Product: ADIDAS | Price: 819999
+Product: R&B | Price: 169
+Product: CLOTHIFY | Price: 7471299
+Product: Kidello | Price: 279799
+Product: YK | Price: 292799
+Product: Status Quo | Price: 289499
+Product: FIONAA TRENDZ | Price: 272299
+Product: Kidlily | Price: 6071399
+Product: Puma | Price: 7191599
+Product: RUTE KIDS | Price: 4541499
+Product: SPORTIGO | Price: 6981199
+Product: United Colors of Benetton | Price: 8541499
+Product: Nauti Nati | Price: 231799
+Product: YK X Trampoline | Price: 4811509
+Product: U.S. Polo Assn. Kids | Price: 7271399
+Product: Googo Gaaga | Price: 2511400
+Product: FIONAA TRENDZ | Price: 320699
+Product: U.S. Polo Assn. Kids | Price: 539899
+Product: LONDON STREETS | Price: 3501999
+Product: Fame Forever by Lifestyle | Price: 599
+Product: CLOTHIFY | Price: 7491299
