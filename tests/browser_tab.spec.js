@@ -9,8 +9,7 @@ import{test, expect} from '@playwright/test';
 //     const flipkart = await context.newPage();
 //     await flipkart.goto("https://www.flipkart.com/");
 
-//Multiple browser and multiple tabs
-
+//Multiple browser and multiple tabs in one browser
 test('browsers', async ({ browser }) => {
     const browser1 = await browser.newContext(
         record
