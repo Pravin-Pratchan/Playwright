@@ -1,0 +1,778 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: browser.spec.js >> browsers
+- Location: tests\browser.spec.js:3:5
+
+# Error details
+
+```
+Error: page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.flipkart.com/", waiting until "load"
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "Skip to Main Content" [ref=e3] [cursor=pointer]:
+      - /url: "#main-content"
+    - generic [ref=e4]:
+      - group "Get 10% Discount Use code APP10 on app" [ref=e7]:
+        - generic [ref=e8]: Get 10% Discount
+        - generic [ref=e9]: Use code APP10 on app
+      - button "Close App Install Banner" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+      - button "Install redBus App" [ref=e16] [cursor=pointer]
+    - banner [ref=e19]:
+      - generic [ref=e20]:
+        - link "redBus logo" [ref=e21] [cursor=pointer]:
+          - /url: /
+          - img "redBus logo" [ref=e22]
+        - list [ref=e24]:
+          - listitem [ref=e25]:
+            - link "Bus tickets" [ref=e26] [cursor=pointer]:
+              - /url: https://www.redbus.in/bus-tickets
+              - img "Online Bus Tickets Booking" [ref=e27]
+          - listitem [ref=e29]:
+            - link "Train tickets" [ref=e30] [cursor=pointer]:
+              - /url: https://www.redbus.in/railways
+              - img "Online Train Tickets Booking" [ref=e31]
+          - listitem [ref=e33]:
+            - link "Hotels" [ref=e34] [cursor=pointer]:
+              - /url: /hotels
+              - img "Online Hotel Booking" [ref=e35]
+        - navigation "Primary" [ref=e37]:
+          - list [ref=e38]:
+            - listitem [ref=e39]:
+              - link "Bookings" [ref=e40] [cursor=pointer]:
+                - /url: https://www.redbus.in/myaccount#MyTrips
+                - generic [ref=e41]: 
+                - text: Bookings
+            - listitem [ref=e42]:
+              - link "Help" [ref=e43] [cursor=pointer]:
+                - /url: https://www.redbus.in/info/redcare
+                - generic [ref=e44]: 
+                - text: Help
+            - listitem [ref=e45]:
+              - button "Account" [ref=e46] [cursor=pointer]:
+                - generic [ref=e47]: 
+                - text: Account
+    - main [ref=e48]:
+      - generic [ref=e50]:
+        - heading "India's No. 1 online bus ticket booking site" [level=1] [ref=e54]
+        - search "Bus ticket" [ref=e56]:
+          - generic [ref=e58]:
+            - generic [ref=e59]:
+              - status [ref=e60]
+              - generic [ref=e61]:
+                - generic [ref=e65] [cursor=pointer]:
+                  - generic [ref=e66]: 
+                  - generic [ref=e67]:
+                    - combobox "From" [ref=e68]
+                    - generic [ref=e69]: From
+                - generic [ref=e72] [cursor=pointer]:
+                  - generic [ref=e73]: 
+                  - generic [ref=e74]:
+                    - combobox "To" [ref=e75]
+                    - generic [ref=e76]: To
+                - dialog "Select date of journey" [ref=e78] [cursor=pointer]:
+                  - generic [ref=e79]: 
+                  - generic [ref=e80]:
+                    - generic [ref=e81]: Date of Journey
+                    - generic [ref=e82]:
+                      - text: 19 Sep, 2026
+                      - generic [ref=e83]: (Today)
+              - generic [ref=e85]:
+                - button "Booking for women, Know more" [ref=e86] [cursor=pointer]:
+                  - generic [ref=e87]:
+                    - generic [ref=e88]: Booking for women
+                    - generic [ref=e89]: Know more
+                - switch "Booking for women" [ref=e90]:
+                  - generic:
+                    - generic:
+                      - checkbox
+            - button "Search buses" [ref=e91] [cursor=pointer]:
+              - generic [ref=e92]: 
+              - text: Search buses
+  - generic [ref=e93]:
+    - article [ref=e94]:
+      - 'heading "redBus: India’s Leading Online Bus Booking and Train Ticket Booking Platform" [level=2] [ref=e95]'
+      - generic [ref=e96]:
+        - paragraph [ref=e97]: redBus is India’s leading bus and train ticket booking platform for over 18 years and 56+ million satisfied users. It offers a seamless online ticket booking experience for millions of people.
+        - paragraph [ref=e98]: With 5200+ bus operators and 730000+ routes on redBus, you can easily find buses to your destination. You can check the best price with exclusive discounts and offers when booking train or bus tickets.
+        - heading "Why Choose redBus for Bus Booking?" [level=2] [ref=e99]
+        - paragraph [ref=e100]: Below are some reasons to choose redBus for booking bus tickets.
+        - list [ref=e101]:
+          - listitem [level=1] [ref=e102]:
+            - strong [ref=e103]: Free Cancellation
+            - text: "- Cancel bus tickets without paying cancellation charges."
+          - listitem [level=1] [ref=e104]:
+            - strong [ref=e105]: Flexi Ticket
+            - text: "- Select a Flexi ticket to modify your travel date at least 8 hours before departure."
+          - listitem [level=1] [ref=e106]:
+            - strong [ref=e107]: Earn Rewards
+            - text: "- Refer your friend and get INR 100 in your redBus wallet after they complete their first trip."
+          - listitem [level=1] [ref=e108]:
+            - strong [ref=e109]: Booking for Women
+            - text: "- Access exclusive deals for women travellers, view the number of women on your bus, enjoy priority helplines, and find buses preferred by women."
+          - listitem [level=1] [ref=e110]:
+            - strong [ref=e111]: Primo Services
+            - text: "- Select top-rated bus operators that offer timely and customer-friendly Primo services."
+          - listitem [level=1] [ref=e112]:
+            - strong [ref=e113]: 24/7 Customer Support
+            - text: "-Receive 24/7 customer service for any assistance related to bookings."
+          - listitem [level=1] [ref=e114]:
+            - strong [ref=e115]: Instant Refund
+            - text: "- Get an instant refund for cancellation or booking-related issues."
+        - list [ref=e116]:
+          - listitem [ref=e117]:
+            - strong [ref=e118]: Live Bus Tracking
+            - text: "- Track your bus in real-time and plan your journey more efficiently."
+        - heading [level=2] [ref=e119]:
+          - text: Why Choose redRail for Train Ticket Booking?
+          - strong [ref=e120]
+        - paragraph [ref=e121]:
+          - text: redRail is one of the most trusted apps for
+          - link "train ticket booking" [ref=e122] [cursor=pointer]:
+            - /url: https://www.redbus.in/railways
+          - text: ". Here's why:"
+        - list [ref=e123]:
+          - listitem [ref=e124]:
+            - strong [ref=e125]: IRCTC Authorised partner -
+            - text: redRail is an authorised IRCTC partner, providing authentic information.
+          - listitem [ref=e126]:
+            - strong [ref=e127]: Free cancellation -
+            - text: Change of plans? Cancel train tickets without paying cancellation charges.
+          - listitem [ref=e128]:
+            - strong [ref=e129]: Alternate Trip -
+            - text: Get confirmed tickets or receive a 3X refund on your waitlisted tickets to book an alternate train or bus.
+          - listitem [ref=e130]:
+            - strong [ref=e131]: PNR Status -
+            - text: Know the current
+            - link "PNR status" [ref=e132] [cursor=pointer]:
+              - /url: https://www.redbus.in/railways/pnr-status
+            - text: of your train ticket with instant updates
+          - listitem [ref=e133]:
+            - strong [ref=e134]: Live Train Status -
+            - text: redRail lets you check the live
+            - link "train running status" [ref=e135] [cursor=pointer]:
+              - /url: https://www.redbus.in/railways/train-running-status
+            - text: ", delays, platform number, and boarding station directions."
+        - heading "How to Book Bus Tickets and Train Tickets Online on redBus?" [level=2] [ref=e136]
+        - paragraph [ref=e137]: Below are some simple steps you can follow to book train or bus tickets online on redBus.
+        - list [ref=e138]:
+          - listitem [level=1] [ref=e139]:
+            - strong [ref=e140]: "Step 1:"
+            - text: Visit the redBus website or app.
+          - listitem [level=1] [ref=e141]:
+            - strong [ref=e142]: "Step 2:"
+            - text: Select your preferred mode of transport, either bus or train.
+          - listitem [level=1] [ref=e143]:
+            - strong [ref=e144]: "Step 3:"
+            - text: Select your travel date and journey details.
+          - listitem [level=1] [ref=e145]:
+            - strong [ref=e146]: Step 4
+            - text: ": Search for your preferred bus or train available on your chosen travel date and route."
+          - listitem [level=1] [ref=e147]:
+            - strong [ref=e148]: "Step 5:"
+            - text: Select your preferred boarding or dropping points and enter your contact details.
+          - listitem [level=1] [ref=e149]:
+            - strong [ref=e150]: "Step 7:"
+            - text: Choose from multiple payment options to proceed with the payment process.
+          - listitem [level=1] [ref=e151]:
+            - strong [ref=e152]: Step 8
+            - text: ": After the successful payment, you will receive a confirmation of your train or bus bookings on your registered email ID or mobile number."
+        - heading "Exclusive Offers on redBus" [level=2] [ref=e153]
+        - paragraph [ref=e154]: redBus provides exclusive offers and deals on bus and train ticket booking for travellers. Additionally, you can also get festive offers on apps or specific to bus operators. All you need to do is check train and bus booking offers on redBus and apply the coupon code mentioned on the website or app to avail the discount. redBus keeps adding new discounts and offers depending on the seasonality, festivals, and other events.
+    - generic [ref=e155]:
+      - heading "Bus Booking redDeals on redBus" [level=2] [ref=e156]
+      - paragraph [ref=e158]: Don't miss out on these incredible offers, book your bus tickets now and travel with convenience and affordability. Hurry, grab the best bus booking deals before they're gone!
+      - generic [ref=e159]:
+        - img "redBus Logo" [ref=e160]
+        - generic [ref=e161]:
+          - generic [ref=e162]: Unlock Unbeatable Exclusive redDeals! 20% OFF
+          - generic [ref=e163]: 8144 Deals . 3050 Bus Operators . 1246387 Routes
+        - link "Book now" [ref=e164]
+    - generic [ref=e165]:
+      - heading "FAQs related to Bus Tickets Booking" [level=2] [ref=e166]
+      - tablist "FAQ Categories" [ref=e167]:
+        - tab "General" [selected] [ref=e169] [cursor=pointer]
+        - tab "Ticket-related" [ref=e170] [cursor=pointer]
+        - tab "Payment" [ref=e171] [cursor=pointer]
+        - tab "Cancellation & Refund" [ref=e172] [cursor=pointer]
+      - tabpanel "General" [ref=e173]:
+        - button [ref=e175] [cursor=pointer]:
+          - heading "Can I track the location of my booked bus online?" [level=3] [ref=e176]
+          - generic [ref=e177]: 
+        - button [ref=e180] [cursor=pointer]:
+          - heading "What are the advantages of bus ticket booking with redBus?" [level=3] [ref=e181]
+          - generic [ref=e182]: 
+        - button [ref=e185] [cursor=pointer]:
+          - heading "Why book bus tickets online on redBus?" [level=3] [ref=e186]
+          - generic [ref=e187]: 
+        - button [ref=e190] [cursor=pointer]:
+          - heading "Do I need to create an account on the redBus site to book bus ticket?" [level=3] [ref=e191]
+          - generic [ref=e192]: 
+        - button [ref=e195] [cursor=pointer]:
+          - heading "Does bus booking online cost me more?" [level=3] [ref=e196]
+          - generic [ref=e197]: 
+        - button [ref=e200] [cursor=pointer]:
+          - heading "How can I get the discounts on the bus booking?" [level=3] [ref=e201]
+          - generic [ref=e202]: 
+        - button [ref=e205] [cursor=pointer]:
+          - heading "What's New in Bus Booking on redBus?" [level=3] [ref=e206]
+          - generic [ref=e207]: 
+        - button [ref=e210] [cursor=pointer]:
+          - heading "Can I book a Government bus ticket on redBus?" [level=3] [ref=e211]
+          - generic [ref=e212]: 
+      - text:                
+  - generic [ref=e215]:
+    - generic [ref=e216]:
+      - button "Popular Bus Routes" [ref=e217] [cursor=pointer]:
+        - text: Popular Bus Routes
+        - generic [ref=e218]: 
+      - list [ref=e219]:
+        - listitem [ref=e220]:
+          - link "Delhi To Manali Bus" [ref=e221] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/delhi-to-manali
+        - listitem [ref=e222]:
+          - link "Delhi To Rishikesh Bus" [ref=e223] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/delhi-to-rishikesh
+        - listitem [ref=e224]:
+          - link "Delhi To Shimla Bus" [ref=e225] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/delhi-to-shimla
+        - listitem [ref=e226]:
+          - link "Delhi To Nainital Bus" [ref=e227] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/delhi-to-nainital
+        - listitem [ref=e228]:
+          - link "Delhi To Katra Bus" [ref=e229] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/delhi-to-katra
+        - listitem [ref=e230]:
+          - link "Bangalore To Goa Bus" [ref=e231] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/bangalore-to-goa
+        - listitem [ref=e232]:
+          - link "Bangalore To Hyderabad Bus" [ref=e233] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/bangalore-to-hyderabad
+        - listitem [ref=e234]:
+          - link "Bangalore To Tirupathi Bus" [ref=e235] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/bangalore-to-tirupathi
+        - listitem [ref=e236]:
+          - link "Bangalore To Chennai Bus" [ref=e237] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/bangalore-to-chennai
+        - listitem [ref=e238]:
+          - link "Bangalore To Pondicherry Bus" [ref=e239] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/bangalore-to-pondicherry
+        - listitem [ref=e240]:
+          - link "Hyderabad To Bangalore Bus" [ref=e241] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/hyderabad-to-bangalore
+        - listitem [ref=e242]:
+          - link "Hyderabad To Goa Bus" [ref=e243] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/hyderabad-to-goa
+        - listitem [ref=e244]:
+          - link "Hyderabad To Srisailam Bus" [ref=e245] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/hyderabad-to-srisailam
+        - listitem [ref=e246]:
+          - link "Hyderabad To Vijayawada Bus" [ref=e247] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/hyderabad-to-vijayawada
+        - listitem [ref=e248]:
+          - link "Hyderabad To Tirupathi Bus" [ref=e249] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/hyderabad-to-tirupathi
+        - listitem [ref=e250]:
+          - link "Pune To Goa Bus" [ref=e251] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/pune-to-goa
+        - listitem [ref=e252]:
+          - link "Pune To Mumbai Bus" [ref=e253] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/pune-to-mumbai
+        - listitem [ref=e254]:
+          - link "Pune To Nagpur Bus" [ref=e255] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/pune-to-nagpur
+        - listitem [ref=e256]:
+          - link "Pune To Kolhapur Bus" [ref=e257] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/pune-to-kolhapur-maharashtra
+        - listitem [ref=e258]:
+          - link "Pune To Nashik Bus" [ref=e259] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/pune-to-nashik
+        - listitem [ref=e260]:
+          - link "Mumbai To Goa Bus" [ref=e261] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/mumbai-to-goa
+        - listitem [ref=e262]:
+          - link "Mumbai To Pune Bus" [ref=e263] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/mumbai-to-pune
+        - listitem [ref=e264]:
+          - link "Mumbai To Shirdi Bus" [ref=e265] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/mumbai-to-shirdi
+        - listitem [ref=e266]:
+          - link "Mumbai To Mahabaleshwar Bus" [ref=e267] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/mumbai-to-mahabaleshwar
+        - listitem [ref=e268]:
+          - link "Mumbai To Kolhapur Bus" [ref=e269] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/mumbai-to-kolhapur-maharashtra
+        - listitem [ref=e270]:
+          - link "Kolkata To Digha Bus" [ref=e271] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/kolkata-to-digha
+        - listitem [ref=e272]:
+          - link "Kolkata To Siliguri Bus" [ref=e273] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/kolkata-to-siliguri
+        - listitem [ref=e274]:
+          - link "Kolkata To Puri Bus" [ref=e275] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/kolkata-to-puri
+        - listitem [ref=e276]:
+          - link "Kolkata To Bakkhali Bus" [ref=e277] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/kolkata-to-bakkhali
+        - listitem [ref=e278]:
+          - link "Kolkata To Mandarmani Bus" [ref=e279] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/kolkata-to-mandarmani
+        - listitem [ref=e280]:
+          - link "Chennai To Bangalore Bus" [ref=e281] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/chennai-to-bangalore
+        - listitem [ref=e282]:
+          - link "Chennai To Pondicherry Bus" [ref=e283] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/chennai-to-pondicherry
+        - listitem [ref=e284]:
+          - link "Chennai To Coimbatore Bus" [ref=e285] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/chennai-to-coimbatore
+        - listitem [ref=e286]:
+          - link "Chennai To Madurai Bus" [ref=e287] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/chennai-to-madurai
+        - listitem [ref=e288]:
+          - link "Chennai To Tirupathi Bus" [ref=e289] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/chennai-to-tirupathi
+        - listitem [ref=e290]:
+          - link "Chandigarh To Manali Bus" [ref=e291] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/chandigarh-to-manali
+        - listitem [ref=e292]:
+          - link "Chandigarh To Shimla Bus" [ref=e293] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/chandigarh-to-shimla
+        - listitem [ref=e294]:
+          - link "Chandigarh To Delhi Bus" [ref=e295] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/chandigarh-to-delhi
+        - listitem [ref=e296]:
+          - link "Chandigarh To Dehradun Bus" [ref=e297] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/chandigarh-to-dehradun
+        - listitem [ref=e298]:
+          - link "Chandigarh To Amritsar Bus" [ref=e299] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/chandigarh-to-amritsar
+        - listitem [ref=e300]:
+          - link "Coimbatore To Chennai Bus" [ref=e301] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/coimbatore-to-chennai
+        - listitem [ref=e302]:
+          - link "Coimbatore To Bangalore Bus" [ref=e303] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/coimbatore-to-bangalore
+        - listitem [ref=e304]:
+          - link "Coimbatore To Ooty Bus" [ref=e305] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/coimbatore-to-ooty
+        - listitem [ref=e306]:
+          - link "Coimbatore To Tiruchendur Bus" [ref=e307] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/coimbatore-to-tiruchendur
+        - listitem [ref=e308]:
+          - link "Coimbatore To Madurai Bus" [ref=e309] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/coimbatore-to-madurai
+        - listitem [ref=e310]:
+          - link "Agra to Bareilly Bus" [ref=e311] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/agra-to-bareilly
+        - listitem [ref=e312]:
+          - link "Hisar to Chandigarh Bus" [ref=e313] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/hisar-to-chandigarh
+        - listitem [ref=e314]:
+          - link "Ayodhya to Varanasi" [ref=e315] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/ayodhya-to-varanasi
+        - listitem [ref=e316]:
+          - link "Lucknow to Ballia Bus" [ref=e317] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/lucknow-to-ballia
+        - listitem [ref=e318]:
+          - link "Lucknow to Moradabad Bus" [ref=e319] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/lucknow-to-moradabad
+        - listitem [ref=e320]:
+          - link "Rajkot to Dwarka Bus" [ref=e321] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/rajkot-to-dwarka
+        - listitem [ref=e322]:
+          - link "Siliguri to Gangtok Bus" [ref=e323] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/siliguri-to-gangtok
+        - listitem [ref=e324]:
+          - link "Ahmedabad to Goa Bus" [ref=e325] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/ahmedabad-to-goa
+        - listitem [ref=e326]:
+          - link "Ahmedabad to Kanpur Bus" [ref=e327] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/ahmedabad-to-kanpur
+        - listitem [ref=e328]:
+          - link "Akola to Pune Bus" [ref=e329] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/akola-to-pune
+        - listitem [ref=e330]:
+          - link "Delhi to Dehradun Bus" [ref=e331] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/delhi-to-dehradun
+        - listitem [ref=e332]:
+          - link "Delhi to Haridwar Bus" [ref=e333] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/delhi-to-haridwar
+        - listitem [ref=e334]:
+          - link "Dehradun to Delhi Bus" [ref=e335] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/dehradun-to-delhi
+        - listitem [ref=e336]:
+          - link "Delhi to Agra Bus" [ref=e337] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/delhi-to-agra
+        - listitem [ref=e338]:
+          - link "Delhi to Varanasi Bus" [ref=e339] [cursor=pointer]:
+            - /url: https://www.redbus.in/bus-tickets/delhi-to-varanasi
+    - generic [ref=e340]:
+      - button "Popular Cities" [ref=e341] [cursor=pointer]:
+        - text: Popular Cities
+        - generic [ref=e342]: 
+      - list [ref=e343]:
+        - listitem [ref=e344]:
+          - link "Hyderabad Bus Booking" [ref=e345] [cursor=pointer]:
+            - /url: buses/hyderabad-bus-tickets
+        - listitem [ref=e346]:
+          - link "Bangalore Bus Booking" [ref=e347] [cursor=pointer]:
+            - /url: buses/bangalore-bus-tickets
+        - listitem [ref=e348]:
+          - link "Chennai Bus Booking" [ref=e349] [cursor=pointer]:
+            - /url: buses/chennai-bus-tickets
+        - listitem [ref=e350]:
+          - link "Pune Bus Booking" [ref=e351] [cursor=pointer]:
+            - /url: buses/pune-bus-tickets
+        - listitem [ref=e352]:
+          - link "Delhi Bus Booking" [ref=e353] [cursor=pointer]:
+            - /url: buses/delhi-bus-tickets
+        - listitem [ref=e354]:
+          - link "Mumbai Bus Booking" [ref=e355] [cursor=pointer]:
+            - /url: buses/mumbai-bus-tickets
+        - listitem [ref=e356]:
+          - link "Kolkata Bus Booking" [ref=e357] [cursor=pointer]:
+            - /url: buses/kolkata-bus-tickets
+        - listitem [ref=e358]:
+          - link "Ernakulam Bus Booking" [ref=e359] [cursor=pointer]:
+            - /url: buses/ernakulam-bus-tickets
+        - listitem [ref=e360]:
+          - link "Ahmedabad Bus Booking" [ref=e361] [cursor=pointer]:
+            - /url: buses/ahmedabad-bus-tickets
+        - listitem [ref=e362]:
+          - link "Vijayawada Bus Booking" [ref=e363] [cursor=pointer]:
+            - /url: buses/vijayawada-bus-tickets
+        - listitem [ref=e364]:
+          - link "Jaipur Bus Booking" [ref=e365] [cursor=pointer]:
+            - /url: buses/jaipur-bus-tickets
+        - listitem [ref=e366]:
+          - link "Indore Bus Booking" [ref=e367] [cursor=pointer]:
+            - /url: buses/indore-bus-tickets
+        - listitem [ref=e368]:
+          - link "Lucknow Bus Booking" [ref=e369] [cursor=pointer]:
+            - /url: buses/lucknow-bus-tickets
+        - listitem [ref=e370]:
+          - link "Bhopal Bus Booking" [ref=e371] [cursor=pointer]:
+            - /url: buses/bhopal-bus-tickets
+        - listitem [ref=e372]:
+          - link "Goa Bus Booking" [ref=e373] [cursor=pointer]:
+            - /url: buses/goa-bus-tickets
+        - listitem [ref=e374]:
+          - link "Ayodhya Bus Booking" [ref=e375] [cursor=pointer]:
+            - /url: buses/ayodhya-bus-tickets
+        - listitem [ref=e376]:
+          - link "Prayagraj Bus Booking" [ref=e377] [cursor=pointer]:
+            - /url: buses/allahabad-bus-tickets
+        - listitem [ref=e378]:
+          - link "Varanasi Bus Booking" [ref=e379] [cursor=pointer]:
+            - /url: buses/varanasi-bus-tickets
+    - generic [ref=e380]:
+      - button "Popular Bus Operators" [ref=e381] [cursor=pointer]:
+        - text: Popular Bus Operators
+        - generic [ref=e382]: 
+      - list [ref=e383]:
+        - listitem [ref=e384]:
+          - link "No 1 Air Travels" [ref=e385] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/no-1-air-travels
+        - listitem [ref=e386]:
+          - link "YBM Travels" [ref=e387] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/ybm-travels
+        - listitem [ref=e388]:
+          - link "Sri SMS Travels" [ref=e389] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/sri-sms-travels
+        - listitem [ref=e390]:
+          - link "Svkdt Travels" [ref=e391] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/svkdt-travels
+        - listitem [ref=e392]:
+          - link "RKT Tours and Travels" [ref=e393] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/rkt-tours-and-travels
+        - listitem [ref=e394]:
+          - link "Royal Cars" [ref=e395] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/royal-cars
+        - listitem [ref=e396]:
+          - link "Rahul Travels" [ref=e397] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/rahul-travels
+        - listitem [ref=e398]:
+          - link "JBT Travels" [ref=e399] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/jbt-travels
+        - listitem [ref=e400]:
+          - link "Raj Express" [ref=e401] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/raj-express-1
+        - listitem [ref=e402]:
+          - link "Vaishali Express" [ref=e403] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/vaishali-express
+        - listitem [ref=e404]:
+          - link "Rahul Travels Indore" [ref=e405] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/rahul-travels-indore
+        - listitem [ref=e406]:
+          - link "Delhi Tours And Travels" [ref=e407] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/delhi-tours-and-travels
+        - listitem [ref=e408]:
+          - link "Ashok Travels" [ref=e409] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/ashok-travels-delhi
+        - listitem [ref=e410]:
+          - link "Greenline Travels" [ref=e411] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/greenline
+        - listitem [ref=e412]:
+          - link "Pawan Travels" [ref=e413] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/pawan-travels-balaghat
+        - listitem [ref=e414]:
+          - link "Ravi Travels" [ref=e415] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/ravi-travels
+        - listitem [ref=e416]:
+          - link "VRL Travels" [ref=e417] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/vrl-travels
+        - listitem [ref=e418]:
+          - link "Dolphin Travels" [ref=e419] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/dolphin-travel-house
+        - listitem [ref=e420]:
+          - link "Ganesh Travels" [ref=e421] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/ganesh-travels
+        - listitem [ref=e422]:
+          - link "Kaveri Travels" [ref=e423] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/kaveri-kamakshi-travels
+        - listitem [ref=e424]:
+          - link "National Travels" [ref=e425] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/national-travels-national
+        - listitem [ref=e426]:
+          - link "Bharathi Travels" [ref=e427] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/bharathi-travels-bharathi
+        - listitem [ref=e428]:
+          - link "City Land Travels" [ref=e429] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/city-land-travels
+        - listitem [ref=e430]:
+          - link "KKaveri Travels" [ref=e431] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/kkaveri-travels
+        - listitem [ref=e432]:
+          - link "KK Travels" [ref=e433] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/kk-travels
+        - listitem [ref=e434]:
+          - link "Mahadev Travels" [ref=e435] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/mahadev-travels-online
+        - listitem [ref=e436]:
+          - link "Maharaja Travels" [ref=e437] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/maharaja-travels-1
+        - listitem [ref=e438]:
+          - link "M R Travels" [ref=e439] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/m-r-travels
+        - listitem [ref=e440]:
+          - link "New Payal Travels" [ref=e441] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/new-payal-travels
+        - listitem [ref=e442]:
+          - link "Paras Travels" [ref=e443] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/paras-travels
+        - listitem [ref=e444]:
+          - link "Shree Parshwanath Travels" [ref=e445] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/parshwanath-travels-parshwanath-ahmedabad
+        - listitem [ref=e446]:
+          - link "Payal Travels" [ref=e447] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/payal-travels
+        - listitem [ref=e448]:
+          - link "R K Travels" [ref=e449] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/rk-travels
+        - listitem [ref=e450]:
+          - link "Shivam Travels" [ref=e451] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/shivam-travels
+        - listitem [ref=e452]:
+          - link "Shree Mahaveer Travels" [ref=e453] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/shree-mahaveer-travels-9721
+        - listitem [ref=e454]:
+          - link "SRS Travels" [ref=e455] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/srs-travels-srs
+        - listitem [ref=e456]:
+          - link "Tulsi Travels" [ref=e457] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/tulsi-travels
+        - listitem [ref=e458]:
+          - link "Vaibhav Travels" [ref=e459] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/vaibhav-travels-10044
+        - listitem [ref=e460]:
+          - link "Vikas Travels" [ref=e461] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/vikas-travels-jaipur
+        - listitem [ref=e462]:
+          - link "Amarnath Travels" [ref=e463] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/amarnath-travels-9984
+        - listitem [ref=e464]:
+          - link "Anand Travels" [ref=e465] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/anand-travel
+        - listitem [ref=e466]:
+          - link "Ashapura Travels" [ref=e467] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/ashapura-travels
+        - listitem [ref=e468]:
+          - link "Ashok Bus Service" [ref=e469] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/ashok-bus-service
+        - listitem [ref=e470]:
+          - link "Ashoka Travels" [ref=e471] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/ashoka-travels
+        - listitem [ref=e472]:
+          - link "Chartered Bus" [ref=e473] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/chartered-bus
+        - listitem [ref=e474]:
+          - link "Neugo" [ref=e475] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/nuego
+        - listitem [ref=e476]:
+          - link "Intrcity Smart Bus" [ref=e477] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/intrcity-smartbus
+        - listitem [ref=e478]:
+          - link "Uttar Pradesh State Road Transport Corporation (UPSRTC)" [ref=e479] [cursor=pointer]:
+            - /url: https://www.redbus.in/online-booking/uttar-pradesh-state-road-transport-corporation-upsrtc
+        - listitem [ref=e480]:
+          - link "HRTC Bus" [ref=e481] [cursor=pointer]:
+            - /url: https://www.redbus.in/online-booking/hrtc
+        - listitem [ref=e482]:
+          - link "South Bengal State Road Transport Corporation ( SBSTC)" [ref=e483] [cursor=pointer]:
+            - /url: https://www.redbus.in/online-booking/south-bengal-state-transport-corporation-sbstc
+        - listitem [ref=e484]:
+          - link "NBSTC" [ref=e485] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/nbstc
+        - listitem [ref=e486]:
+          - link "A1 Travels" [ref=e487] [cursor=pointer]:
+            - /url: https://www.redbus.in/travels/a1-travels
+    - navigation "Footer links" [ref=e488]:
+      - generic [ref=e489]:
+        - navigation "secondary" [ref=e490]:
+          - generic [ref=e492]:
+            - heading "About redBus" [level=2] [ref=e493]
+            - list [ref=e494]:
+              - listitem [ref=e495]:
+                - link "Contact us" [ref=e496] [cursor=pointer]:
+                  - /url: https://www.redbus.in/info/contactus
+              - listitem [ref=e497]:
+                - link "Sitemap" [ref=e498] [cursor=pointer]:
+                  - /url: https://www.redbus.in/sitemap.html
+              - listitem [ref=e499]:
+                - link "Offers" [ref=e500] [cursor=pointer]:
+                  - /url: https://www.redbus.in/offers
+              - listitem [ref=e501]:
+                - link "Careers" [ref=e502] [cursor=pointer]:
+                  - /url: https://www.redbus.in/careers
+              - listitem [ref=e503]:
+                - link "Download redBus App" [ref=e504] [cursor=pointer]:
+                  - /url: https://www.redbus.in/download-app
+        - navigation "secondary" [ref=e505]:
+          - generic [ref=e507]:
+            - heading "Info" [level=2] [ref=e508]
+            - list [ref=e509]:
+              - listitem [ref=e510]:
+                - link "T&C" [ref=e511] [cursor=pointer]:
+                  - /url: https://www.redbus.in/info/termscondition
+              - listitem [ref=e512]:
+                - link "Privacy policy" [ref=e513] [cursor=pointer]:
+                  - /url: https://www.redbus.in/info/privacypolicy
+              - listitem [ref=e514]:
+                - link "Blog" [ref=e515] [cursor=pointer]:
+                  - /url: https://blog.redbus.in
+              - listitem [ref=e516]:
+                - link "Bus operator registration" [ref=e517] [cursor=pointer]:
+                  - /url: https://onboardvendor.redbus.in/
+              - listitem [ref=e518]:
+                - link "Agent registration" [ref=e519] [cursor=pointer]:
+                  - /url: https://in3.seatseller.travel/
+              - listitem [ref=e520]:
+                - link "Insurance partner" [ref=e521] [cursor=pointer]:
+                  - /url: https://www.acko.com/
+              - listitem [ref=e522]:
+                - link "User agreement" [ref=e523] [cursor=pointer]:
+                  - /url: https://www.redbus.in/info/useragreement
+              - listitem [ref=e524]:
+                - link "Primo Bus" [ref=e525] [cursor=pointer]:
+                  - /url: https://www.redbus.in/primo/primo-service
+              - listitem [ref=e526]:
+                - link "Bus Timetable" [ref=e527] [cursor=pointer]:
+                  - /url: https://www.redbus.in/bus-timetable
+              - listitem [ref=e528]:
+                - link "Report Security Issues" [ref=e529] [cursor=pointer]:
+                  - /url: " https://www.redbus.in/bugbounty"
+        - navigation "secondary" [ref=e530]:
+          - generic [ref=e532]:
+            - heading "Global Sites" [level=2] [ref=e533]
+            - list [ref=e534]:
+              - listitem [ref=e535]:
+                - link "India" [ref=e536] [cursor=pointer]:
+                  - /url: https://www.redbus.in/
+              - listitem [ref=e537]:
+                - link "Singapore" [ref=e538] [cursor=pointer]:
+                  - /url: https://www.redbus.sg/
+              - listitem [ref=e539]:
+                - link "Malaysia" [ref=e540] [cursor=pointer]:
+                  - /url: https://www.redbus.my/
+              - listitem [ref=e541]:
+                - link "Indonesia" [ref=e542] [cursor=pointer]:
+                  - /url: https://www.redbus.id/
+              - listitem [ref=e543]:
+                - link "Peru" [ref=e544] [cursor=pointer]:
+                  - /url: https://www.redbus.pe/
+              - listitem [ref=e545]:
+                - link "Colombia" [ref=e546] [cursor=pointer]:
+                  - /url: https://www.redbus.co/
+              - listitem [ref=e547]:
+                - link "Cambodia" [ref=e548] [cursor=pointer]:
+                  - /url: https://www.redbus.com.kh/
+              - listitem [ref=e549]:
+                - link "Vietnam" [ref=e550] [cursor=pointer]:
+                  - /url: https://www.redbus.vn/
+        - navigation "secondary" [ref=e551]:
+          - generic [ref=e553]:
+            - heading "Our Partners" [level=2] [ref=e554]
+            - list [ref=e555]:
+              - listitem [ref=e556]:
+                - link "Goibibo Bus" [ref=e557] [cursor=pointer]:
+                  - /url: https://www.goibibo.com/bus/
+              - listitem [ref=e558]:
+                - link "Goibibo Hotels" [ref=e559] [cursor=pointer]:
+                  - /url: https://www.goibibo.com/hotels/
+              - listitem [ref=e560]:
+                - link "Makemytrip Hotels" [ref=e561] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/hotels/
+    - generic [ref=e562]:
+      - img "redBus Logo" [ref=e563]
+      - generic [ref=e564]: redBus is the world's largest online bus ticket booking service trusted by over 56+ million happy customers globally. redBus offers bus ticket booking through its website, iOS and Android mobile apps for all major routes.
+    - generic [ref=e565]:
+      - generic [ref=e566]: Ⓒ 2026 MAKEMYTRIP (INDIA) LIMITED. All rights reserved
+      - list [ref=e567]:
+        - listitem [ref=e568]:
+          - link [ref=e569] [cursor=pointer]:
+            - /url: https://www.facebook.com/redbus.in/
+            - img "redbus_facebook" [ref=e570]
+        - listitem [ref=e571]:
+          - link [ref=e572] [cursor=pointer]:
+            - /url: https://in.linkedin.com/company/redbus_2/
+            - img "redbus_linkedin" [ref=e573]
+        - listitem [ref=e574]:
+          - link [ref=e575] [cursor=pointer]:
+            - /url: https://twitter.com/redBus_in/
+            - img "redbus_twitter" [ref=e576]
+        - listitem [ref=e577]:
+          - link [ref=e578] [cursor=pointer]:
+            - /url: https://www.instagram.com/accounts/login/?next=/redbusindia/
+            - img "redbus_instagram" [ref=e579]
+```
+
+# Test source
+
+```ts
+  1  | import { test, expect } from '@playwright/test'
+  2  | 
+  3  | test('browsers', async ({ context }) => {
+  4  | 
+  5  |     const redbus = await context.newPage();   // tab 1
+  6  |     await redbus.goto("https://www.redbus.in/");
+  7  | 
+  8  |     const flipkart = await context.newPage(); // tab 2, same window
+> 9  |     await flipkart.goto("https://www.flipkart.com/");
+     |                    ^ Error: page.goto: Target page, context or browser has been closed
+  10 | });
+```

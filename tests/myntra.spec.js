@@ -23,7 +23,55 @@ test('Myntra', async ({ page }) => {
         const productName = await page.locator(`//li[contains(@class,'product-base')][.//*[(contains(@class,'product-discountedPrice') or contains(@class,'product-price')) and contains(.,'${minPrice}')]]`).locator('.product-brand').first().innerText();
         return productName;
     }
-
     const productName = await getProductName(page, minPrice);
     console.log("Product name of the minumun price: " + productName);
+
+    //4. Find the minimum price using fuction
+    async function getProductBrandByPrice(price) {
+    const productLocator = page.locator(`//li[@class="product-base"]/descendant::span[@class="product-discountedPrice" and text()="${price}"]/ancestor::div[@class="product-productMetaInfo"]/descendant::h3[@class="product-brand"]`);
+    const productName = await productLocator.textContent();
+    return productName;
+  }
+  //Function to find the minimum price and call the getProductBrandByPrice function
+
+  async function findMinimumPrice() {
+    const allPrices = page.locator(
+      '//li[@class="product-base"]/descendant::span[@class="product-discountedPrice"]'
+    );
+
+    
+    const priceList = await allPrices.allTextContents();
+    const prices = priceList.map((price) =>
+    Number(price.replace(/[^0-9]/g, ''))
+    );
+
+    const minPrice = Math.min(...prices);
+    console.log('Minimum price:', minPrice);
+
+    // Calling the product-brand function inside this function
+    const brandName = await getProductBrandByPrice(minPrice);
+    console.log('Product Brand:', brandName);
+  }
+await findMinimumPrice();
+
+//Task 5: Find minimun price and product name for 50 products using Xpath:
+
+async function MinimumPrice() {
+    const allPrices = page.locator('//li[@class="product-base"]/descendant::div[@class="product-price"]/descendant::span[@class="product-discountedPrice" or (text() and not(@class))]');
+    const priceList = await allPrices.allTextContents();
+    const prices = priceList.map(p => Number(p.replace(/\D/g, '')));
+    const minimum_price = Math.min(...prices);
+    const product_name = await productBrand(minimum_price);
+    console.log("Product Brand:", product_name);
+    return minimum_price;
+  }
+
+  //Find ProductBrand Name
+  async function productBrand(minimumPrice) {
+    const brand = page.locator(`//span[(@class="product-discountedPrice" or (text() and not(@class))) and text()="${minimumPrice}"]/ancestor::li[@class="product-base"]//h3[@class="product-brand"]`).first();
+    return await brand.textContent();
+  }
+
+  console.log("Minimum Price:", await MinimumPrice());
+
 });

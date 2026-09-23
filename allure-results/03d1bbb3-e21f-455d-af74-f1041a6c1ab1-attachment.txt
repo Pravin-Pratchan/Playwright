@@ -1,0 +1,6 @@
+Total Number of Products: 50
+Minimum price is: 169
+Product name of the minumun price: R&B
+Minimum price: Rs. 599,Rs. 734,Rs. 631,Rs. 469,Rs. 599,Rs. 395,Rs. 749,Rs. 884,Rs. 696,Rs. 734,Rs. 490,Rs. 399,Rs. 423,Rs. 431,Rs. 631,Rs. 639,Rs. 696,Rs. 417,Rs. 639,Rs. 794,Rs. 220,Rs. 479,Rs. 714,Rs. 689,Rs. 667,Rs. 794,Rs. 638,Rs. 324,Rs. 989,Rs. 490,Rs. 459,Rs. 529,Rs. 453,Rs. 335,Rs. 636,Rs. 549,Rs. 436,Rs. 489,Rs. 279,Rs. 469,Rs. 794,Rs. 419,Rs. 377,Rs. 734,Rs. 418,Rs. 899
+Minimum price: Rs. 599,Rs. 734,Rs. 631,Rs. 469,Rs. 599,Rs. 395,Rs. 749,Rs. 884,Rs. 696,Rs. 734,Rs. 490,Rs. 399,Rs. 423,Rs. 431,Rs. 631,Rs. 639,Rs. 696,Rs. 417,Rs. 639,Rs. 794,Rs. 220,Rs. 479,Rs. 714,Rs. 689,Rs. 667,Rs. 794,Rs. 638,Rs. 324,Rs. 989,Rs. 490,Rs. 459,Rs. 529,Rs. 453,Rs. 335,Rs. 636,Rs. 549,Rs. 436,Rs. 489,Rs. 279,Rs. 469,Rs. 794,Rs. 419,Rs. 377,Rs. 734,Rs. 418,Rs. 899
+Minimum price: 220

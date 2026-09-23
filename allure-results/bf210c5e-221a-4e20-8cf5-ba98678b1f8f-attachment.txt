@@ -1,0 +1,5 @@
+Total Number of Products: 50
+Minimum price is: 169
+Product name of the minumun price: R&B
+Minimum price: 220
+Product Brand: KEESOR

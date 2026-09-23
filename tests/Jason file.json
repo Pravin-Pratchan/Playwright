@@ -1,0 +1,11 @@
+{
+    "name":"Pravin", 
+    "age":34, 
+    "id":1234,
+    "contant":
+    {
+        "mobile1": "9626209636", 
+        "mobile2": "8883282945"
+    }, 
+    "skills":["Manual", "Autonmation", "API", "Mobile"]
+}
